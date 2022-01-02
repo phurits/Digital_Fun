@@ -1,0 +1,419 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : chooseData.vf
+// /___/   /\     Timestamp : 12/16/2021 00:03:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/TicTacToeV2/chooseData.vf -w C:/xilinx__workspace/TicTacToeV2/chooseData.sch
+//Design Name: chooseData
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKCE_HXILINX_chooseData(Q, C, CE, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(CE)
+        begin
+          if(!J)
+          begin
+            if(K)
+            Q <= 1'b0;
+          end
+          else
+          begin
+            if(!K)
+            Q <= 1'b1;
+            else 
+            Q <= !Q;
+          end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module chooseData(G, 
+                  R, 
+                  sel, 
+                  Gselect, 
+                  Rselect);
+
+    input [8:0] G;
+    input [8:0] R;
+    input sel;
+   output [8:0] Gselect;
+   output [8:0] Rselect;
+   
+   wire Gclick0;
+   wire Gclick1;
+   wire Gclick2;
+   wire Gclick3;
+   wire Gclick4;
+   wire Gclick5;
+   wire Gclick6;
+   wire Gclick7;
+   wire Gclick8;
+   wire Rclick0;
+   wire Rclick1;
+   wire Rclick2;
+   wire Rclick3;
+   wire Rclick4;
+   wire Rclick5;
+   wire Rclick6;
+   wire Rclick7;
+   wire Rclick8;
+   wire XLXN_23;
+   wire XLXN_43;
+   wire XLXN_45;
+   wire XLXN_89;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_145;
+   wire XLXN_147;
+   wire XLXN_148;
+   wire XLXN_150;
+   wire XLXN_152;
+   wire XLXN_153;
+   wire XLXN_159;
+   wire XLXN_161;
+   wire XLXN_162;
+   wire XLXN_164;
+   wire XLXN_166;
+   wire XLXN_167;
+   wire XLXN_173;
+   wire XLXN_175;
+   wire XLXN_176;
+   wire XLXN_178;
+   wire XLXN_180;
+   wire XLXN_181;
+   wire XLXN_187;
+   wire XLXN_189;
+   wire XLXN_190;
+   wire XLXN_192;
+   wire XLXN_194;
+   wire XLXN_195;
+   wire XLXN_201;
+   wire XLXN_203;
+   wire XLXN_204;
+   wire XLXN_206;
+   wire XLXN_208;
+   wire XLXN_209;
+   wire XLXN_215;
+   wire XLXN_217;
+   wire XLXN_218;
+   wire XLXN_220;
+   wire XLXN_222;
+   wire XLXN_223;
+   wire XLXN_229;
+   wire XLXN_231;
+   wire XLXN_232;
+   wire XLXN_234;
+   wire XLXN_236;
+   wire XLXN_237;
+   wire XLXN_243;
+   wire XLXN_245;
+   wire XLXN_246;
+   wire XLXN_248;
+   wire XLXN_250;
+   wire XLXN_251;
+   wire [8:0] Gselect_DUMMY;
+   wire [8:0] Rselect_DUMMY;
+   
+   assign Gselect[8:0] = Gselect_DUMMY[8:0];
+   assign Rselect[8:0] = Rselect_DUMMY[8:0];
+   AND2  XLXI_1 (.I0(R[0]), 
+                .I1(sel), 
+                .O(Rclick0));
+   AND2  XLXI_2 (.I0(sel), 
+                .I1(G[0]), 
+                .O(Gclick0));
+   AND2  XLXI_3 (.I0(R[1]), 
+                .I1(sel), 
+                .O(Rclick1));
+   AND2  XLXI_4 (.I0(sel), 
+                .I1(G[1]), 
+                .O(Gclick1));
+   AND2  XLXI_5 (.I0(R[2]), 
+                .I1(sel), 
+                .O(Rclick2));
+   AND2  XLXI_6 (.I0(sel), 
+                .I1(G[2]), 
+                .O(Gclick2));
+   AND2  XLXI_7 (.I0(R[3]), 
+                .I1(sel), 
+                .O(Rclick3));
+   AND2  XLXI_8 (.I0(sel), 
+                .I1(G[3]), 
+                .O(Gclick3));
+   AND2  XLXI_9 (.I0(R[4]), 
+                .I1(sel), 
+                .O(Rclick4));
+   AND2  XLXI_10 (.I0(sel), 
+                 .I1(G[4]), 
+                 .O(Gclick4));
+   AND2  XLXI_11 (.I0(R[5]), 
+                 .I1(sel), 
+                 .O(Rclick5));
+   AND2  XLXI_12 (.I0(sel), 
+                 .I1(G[5]), 
+                 .O(Gclick5));
+   AND2  XLXI_13 (.I0(R[6]), 
+                 .I1(sel), 
+                 .O(Rclick6));
+   AND2  XLXI_14 (.I0(sel), 
+                 .I1(G[6]), 
+                 .O(Gclick6));
+   AND2  XLXI_15 (.I0(R[7]), 
+                 .I1(sel), 
+                 .O(Rclick7));
+   AND2  XLXI_16 (.I0(sel), 
+                 .I1(G[7]), 
+                 .O(Gclick7));
+   AND2  XLXI_17 (.I0(R[8]), 
+                 .I1(sel), 
+                 .O(Rclick8));
+   AND2  XLXI_18 (.I0(sel), 
+                 .I1(G[8]), 
+                 .O(Gclick8));
+   (* HU_SET = "XLXI_19_27" *) 
+   FJKCE_HXILINX_chooseData  XLXI_19 (.C(Rclick0), 
+                                     .CE(XLXN_23), 
+                                     .CLR(XLXN_45), 
+                                     .J(XLXN_43), 
+                                     .K(XLXN_43), 
+                                     .Q(Rselect_DUMMY[0]));
+   VCC  XLXI_21 (.P(XLXN_43));
+   GND  XLXI_22 (.G(XLXN_45));
+   (* HU_SET = "XLXI_55_28" *) 
+   FJKCE_HXILINX_chooseData  XLXI_55 (.C(Gclick0), 
+                                     .CE(XLXN_89), 
+                                     .CLR(XLXN_92), 
+                                     .J(XLXN_91), 
+                                     .K(XLXN_91), 
+                                     .Q(Gselect_DUMMY[0]));
+   VCC  XLXI_57 (.P(XLXN_91));
+   GND  XLXI_58 (.G(XLXN_92));
+   NOR2  XLXI_91 (.I0(Gselect_DUMMY[0]), 
+                 .I1(Rselect_DUMMY[0]), 
+                 .O(XLXN_23));
+   NOR2  XLXI_92 (.I0(Gselect_DUMMY[0]), 
+                 .I1(Rselect_DUMMY[0]), 
+                 .O(XLXN_89));
+   (* HU_SET = "XLXI_97_29" *) 
+   FJKCE_HXILINX_chooseData  XLXI_97 (.C(Rclick1), 
+                                     .CE(XLXN_145), 
+                                     .CLR(XLXN_148), 
+                                     .J(XLXN_147), 
+                                     .K(XLXN_147), 
+                                     .Q(Rselect_DUMMY[1]));
+   VCC  XLXI_98 (.P(XLXN_147));
+   GND  XLXI_99 (.G(XLXN_148));
+   (* HU_SET = "XLXI_100_30" *) 
+   FJKCE_HXILINX_chooseData  XLXI_100 (.C(Gclick1), 
+                                      .CE(XLXN_150), 
+                                      .CLR(XLXN_153), 
+                                      .J(XLXN_152), 
+                                      .K(XLXN_152), 
+                                      .Q(Gselect_DUMMY[1]));
+   VCC  XLXI_101 (.P(XLXN_152));
+   GND  XLXI_102 (.G(XLXN_153));
+   NOR2  XLXI_103 (.I0(Gselect_DUMMY[1]), 
+                  .I1(Rselect_DUMMY[1]), 
+                  .O(XLXN_145));
+   NOR2  XLXI_104 (.I0(Gselect_DUMMY[1]), 
+                  .I1(Rselect_DUMMY[1]), 
+                  .O(XLXN_150));
+   (* HU_SET = "XLXI_105_31" *) 
+   FJKCE_HXILINX_chooseData  XLXI_105 (.C(Rclick2), 
+                                      .CE(XLXN_159), 
+                                      .CLR(XLXN_162), 
+                                      .J(XLXN_161), 
+                                      .K(XLXN_161), 
+                                      .Q(Rselect_DUMMY[2]));
+   VCC  XLXI_106 (.P(XLXN_161));
+   GND  XLXI_107 (.G(XLXN_162));
+   (* HU_SET = "XLXI_108_32" *) 
+   FJKCE_HXILINX_chooseData  XLXI_108 (.C(Gclick2), 
+                                      .CE(XLXN_164), 
+                                      .CLR(XLXN_167), 
+                                      .J(XLXN_166), 
+                                      .K(XLXN_166), 
+                                      .Q(Gselect_DUMMY[2]));
+   VCC  XLXI_109 (.P(XLXN_166));
+   GND  XLXI_110 (.G(XLXN_167));
+   NOR2  XLXI_111 (.I0(Gselect_DUMMY[2]), 
+                  .I1(Rselect_DUMMY[2]), 
+                  .O(XLXN_159));
+   NOR2  XLXI_112 (.I0(Gselect_DUMMY[2]), 
+                  .I1(Rselect_DUMMY[2]), 
+                  .O(XLXN_164));
+   (* HU_SET = "XLXI_113_33" *) 
+   FJKCE_HXILINX_chooseData  XLXI_113 (.C(Rclick3), 
+                                      .CE(XLXN_173), 
+                                      .CLR(XLXN_176), 
+                                      .J(XLXN_175), 
+                                      .K(XLXN_175), 
+                                      .Q(Rselect_DUMMY[3]));
+   VCC  XLXI_114 (.P(XLXN_175));
+   GND  XLXI_115 (.G(XLXN_176));
+   (* HU_SET = "XLXI_116_34" *) 
+   FJKCE_HXILINX_chooseData  XLXI_116 (.C(Gclick3), 
+                                      .CE(XLXN_178), 
+                                      .CLR(XLXN_181), 
+                                      .J(XLXN_180), 
+                                      .K(XLXN_180), 
+                                      .Q(Gselect_DUMMY[3]));
+   VCC  XLXI_117 (.P(XLXN_180));
+   GND  XLXI_118 (.G(XLXN_181));
+   NOR2  XLXI_119 (.I0(Gselect_DUMMY[3]), 
+                  .I1(Rselect_DUMMY[3]), 
+                  .O(XLXN_173));
+   NOR2  XLXI_120 (.I0(Gselect_DUMMY[3]), 
+                  .I1(Rselect_DUMMY[3]), 
+                  .O(XLXN_178));
+   (* HU_SET = "XLXI_121_35" *) 
+   FJKCE_HXILINX_chooseData  XLXI_121 (.C(Rclick4), 
+                                      .CE(XLXN_187), 
+                                      .CLR(XLXN_190), 
+                                      .J(XLXN_189), 
+                                      .K(XLXN_189), 
+                                      .Q(Rselect_DUMMY[4]));
+   VCC  XLXI_122 (.P(XLXN_189));
+   GND  XLXI_123 (.G(XLXN_190));
+   (* HU_SET = "XLXI_124_36" *) 
+   FJKCE_HXILINX_chooseData  XLXI_124 (.C(Gclick4), 
+                                      .CE(XLXN_192), 
+                                      .CLR(XLXN_195), 
+                                      .J(XLXN_194), 
+                                      .K(XLXN_194), 
+                                      .Q(Gselect_DUMMY[4]));
+   VCC  XLXI_125 (.P(XLXN_194));
+   GND  XLXI_126 (.G(XLXN_195));
+   NOR2  XLXI_127 (.I0(Gselect_DUMMY[4]), 
+                  .I1(Rselect_DUMMY[4]), 
+                  .O(XLXN_187));
+   NOR2  XLXI_128 (.I0(Gselect_DUMMY[4]), 
+                  .I1(Rselect_DUMMY[4]), 
+                  .O(XLXN_192));
+   (* HU_SET = "XLXI_129_37" *) 
+   FJKCE_HXILINX_chooseData  XLXI_129 (.C(Rclick5), 
+                                      .CE(XLXN_201), 
+                                      .CLR(XLXN_204), 
+                                      .J(XLXN_203), 
+                                      .K(XLXN_203), 
+                                      .Q(Rselect_DUMMY[5]));
+   VCC  XLXI_130 (.P(XLXN_203));
+   GND  XLXI_131 (.G(XLXN_204));
+   (* HU_SET = "XLXI_132_38" *) 
+   FJKCE_HXILINX_chooseData  XLXI_132 (.C(Gclick5), 
+                                      .CE(XLXN_206), 
+                                      .CLR(XLXN_209), 
+                                      .J(XLXN_208), 
+                                      .K(XLXN_208), 
+                                      .Q(Gselect_DUMMY[5]));
+   VCC  XLXI_133 (.P(XLXN_208));
+   GND  XLXI_134 (.G(XLXN_209));
+   NOR2  XLXI_135 (.I0(Gselect_DUMMY[5]), 
+                  .I1(Rselect_DUMMY[5]), 
+                  .O(XLXN_201));
+   NOR2  XLXI_136 (.I0(Gselect_DUMMY[5]), 
+                  .I1(Rselect_DUMMY[5]), 
+                  .O(XLXN_206));
+   (* HU_SET = "XLXI_137_39" *) 
+   FJKCE_HXILINX_chooseData  XLXI_137 (.C(Rclick6), 
+                                      .CE(XLXN_215), 
+                                      .CLR(XLXN_218), 
+                                      .J(XLXN_217), 
+                                      .K(XLXN_217), 
+                                      .Q(Rselect_DUMMY[6]));
+   VCC  XLXI_138 (.P(XLXN_217));
+   GND  XLXI_139 (.G(XLXN_218));
+   (* HU_SET = "XLXI_140_40" *) 
+   FJKCE_HXILINX_chooseData  XLXI_140 (.C(Gclick6), 
+                                      .CE(XLXN_220), 
+                                      .CLR(XLXN_223), 
+                                      .J(XLXN_222), 
+                                      .K(XLXN_222), 
+                                      .Q(Gselect_DUMMY[6]));
+   VCC  XLXI_141 (.P(XLXN_222));
+   GND  XLXI_142 (.G(XLXN_223));
+   NOR2  XLXI_143 (.I0(Gselect_DUMMY[6]), 
+                  .I1(Rselect_DUMMY[6]), 
+                  .O(XLXN_215));
+   NOR2  XLXI_144 (.I0(Gselect_DUMMY[6]), 
+                  .I1(Rselect_DUMMY[6]), 
+                  .O(XLXN_220));
+   (* HU_SET = "XLXI_145_41" *) 
+   FJKCE_HXILINX_chooseData  XLXI_145 (.C(Rclick7), 
+                                      .CE(XLXN_229), 
+                                      .CLR(XLXN_232), 
+                                      .J(XLXN_231), 
+                                      .K(XLXN_231), 
+                                      .Q(Rselect_DUMMY[7]));
+   VCC  XLXI_146 (.P(XLXN_231));
+   GND  XLXI_147 (.G(XLXN_232));
+   (* HU_SET = "XLXI_148_42" *) 
+   FJKCE_HXILINX_chooseData  XLXI_148 (.C(Gclick7), 
+                                      .CE(XLXN_234), 
+                                      .CLR(XLXN_237), 
+                                      .J(XLXN_236), 
+                                      .K(XLXN_236), 
+                                      .Q(Gselect_DUMMY[7]));
+   VCC  XLXI_149 (.P(XLXN_236));
+   GND  XLXI_150 (.G(XLXN_237));
+   NOR2  XLXI_151 (.I0(Gselect_DUMMY[7]), 
+                  .I1(Rselect_DUMMY[7]), 
+                  .O(XLXN_229));
+   NOR2  XLXI_152 (.I0(Gselect_DUMMY[7]), 
+                  .I1(Rselect_DUMMY[7]), 
+                  .O(XLXN_234));
+   (* HU_SET = "XLXI_153_43" *) 
+   FJKCE_HXILINX_chooseData  XLXI_153 (.C(Rclick8), 
+                                      .CE(XLXN_243), 
+                                      .CLR(XLXN_246), 
+                                      .J(XLXN_245), 
+                                      .K(XLXN_245), 
+                                      .Q(Rselect_DUMMY[8]));
+   VCC  XLXI_154 (.P(XLXN_245));
+   GND  XLXI_155 (.G(XLXN_246));
+   (* HU_SET = "XLXI_156_44" *) 
+   FJKCE_HXILINX_chooseData  XLXI_156 (.C(Gclick8), 
+                                      .CE(XLXN_248), 
+                                      .CLR(XLXN_251), 
+                                      .J(XLXN_250), 
+                                      .K(XLXN_250), 
+                                      .Q(Gselect_DUMMY[8]));
+   VCC  XLXI_157 (.P(XLXN_250));
+   GND  XLXI_158 (.G(XLXN_251));
+   NOR2  XLXI_159 (.I0(Gselect_DUMMY[8]), 
+                  .I1(Rselect_DUMMY[8]), 
+                  .O(XLXN_243));
+   NOR2  XLXI_160 (.I0(Gselect_DUMMY[8]), 
+                  .I1(Rselect_DUMMY[8]), 
+                  .O(XLXN_248));
+endmodule

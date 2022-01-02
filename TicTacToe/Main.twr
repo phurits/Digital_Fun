@@ -1,0 +1,497 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf
+
+Design file:              Main.ncd
+Physical constraint file: Main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Button0 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+G0          |        13.010(R)|      SLOW  |         7.152(R)|      FAST  |XLXN_74           |   0.000|
+G1          |        13.238(R)|      SLOW  |         7.414(R)|      FAST  |XLXN_74           |   0.000|
+G2          |        14.344(R)|      SLOW  |         8.391(R)|      FAST  |XLXN_74           |   0.000|
+G3          |        14.667(R)|      SLOW  |         8.433(R)|      FAST  |XLXN_74           |   0.000|
+G4          |        14.216(R)|      SLOW  |         8.201(R)|      FAST  |XLXN_74           |   0.000|
+G5          |        13.914(R)|      SLOW  |         7.997(R)|      FAST  |XLXN_74           |   0.000|
+G6          |        14.302(R)|      SLOW  |         8.244(R)|      FAST  |XLXN_74           |   0.000|
+G7          |        13.829(R)|      SLOW  |         7.862(R)|      FAST  |XLXN_74           |   0.000|
+G8          |        13.828(R)|      SLOW  |         7.960(R)|      FAST  |XLXN_74           |   0.000|
+R0          |        13.281(R)|      SLOW  |         7.326(R)|      FAST  |XLXN_74           |   0.000|
+R1          |        13.514(R)|      SLOW  |         7.733(R)|      FAST  |XLXN_74           |   0.000|
+R2          |        13.789(R)|      SLOW  |         7.876(R)|      FAST  |XLXN_74           |   0.000|
+R3          |        14.053(R)|      SLOW  |         8.078(R)|      FAST  |XLXN_74           |   0.000|
+R4          |        14.372(R)|      SLOW  |         8.326(R)|      FAST  |XLXN_74           |   0.000|
+R5          |        13.800(R)|      SLOW  |         7.920(R)|      FAST  |XLXN_74           |   0.000|
+R6          |        14.199(R)|      SLOW  |         8.138(R)|      FAST  |XLXN_74           |   0.000|
+R7          |        14.078(R)|      SLOW  |         8.058(R)|      FAST  |XLXN_74           |   0.000|
+R8          |        13.855(R)|      SLOW  |         7.965(R)|      FAST  |XLXN_74           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Button1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+G0          |        13.057(R)|      SLOW  |         7.086(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        13.604(R)|      SLOW  |         7.916(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        13.354(R)|      SLOW  |         7.888(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        14.335(R)|      SLOW  |         8.479(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        14.533(R)|      SLOW  |         8.649(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        14.808(R)|      SLOW  |         8.824(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        14.933(R)|      SLOW  |         8.816(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        14.160(R)|      SLOW  |         8.271(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        13.385(R)|      SLOW  |         7.925(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        13.071(R)|      SLOW  |         7.752(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        14.602(R)|      SLOW  |         8.551(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        13.881(R)|      SLOW  |         8.144(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        14.755(R)|      SLOW  |         8.786(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        14.119(R)|      SLOW  |         8.354(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        15.819(R)|      SLOW  |         9.619(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        14.895(R)|      SLOW  |         8.874(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        14.792(R)|      SLOW  |         8.575(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        12.621(R)|      SLOW  |         7.404(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.533(R)|      SLOW  |         7.329(R)|      FAST  |XLXI_87/choose0   |   0.000|
+G1          |        13.055(R)|      SLOW  |         7.694(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        13.602(R)|      SLOW  |         7.389(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        13.352(R)|      SLOW  |         7.839(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        14.333(R)|      SLOW  |         8.430(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        14.531(R)|      SLOW  |         8.600(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        14.806(R)|      SLOW  |         8.775(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        14.931(R)|      SLOW  |         8.767(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        14.158(R)|      SLOW  |         8.222(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        13.383(R)|      SLOW  |         7.876(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        13.069(R)|      SLOW  |         7.703(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        14.600(R)|      SLOW  |         8.502(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        13.879(R)|      SLOW  |         8.095(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        14.753(R)|      SLOW  |         8.737(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        14.117(R)|      SLOW  |         8.305(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        15.817(R)|      SLOW  |         9.570(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        14.893(R)|      SLOW  |         8.825(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        14.790(R)|      SLOW  |         8.526(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        12.619(R)|      SLOW  |         7.355(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.987(R)|      SLOW  |         7.499(R)|      FAST  |XLXI_87/choose1   |   0.000|
+G2          |        14.147(R)|      SLOW  |         8.638(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        14.694(R)|      SLOW  |         8.811(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        14.444(R)|      SLOW  |         7.698(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        15.425(R)|      SLOW  |         9.374(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        15.623(R)|      SLOW  |         9.544(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        15.898(R)|      SLOW  |         9.719(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        16.023(R)|      SLOW  |         9.711(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        15.250(R)|      SLOW  |         9.166(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        14.475(R)|      SLOW  |         8.820(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        14.161(R)|      SLOW  |         8.647(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        15.692(R)|      SLOW  |         9.446(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        14.971(R)|      SLOW  |         9.039(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        15.845(R)|      SLOW  |         9.681(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        15.209(R)|      SLOW  |         9.249(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        16.909(R)|      SLOW  |        10.514(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        15.985(R)|      SLOW  |         9.769(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        15.882(R)|      SLOW  |         9.470(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        13.711(R)|      SLOW  |         8.299(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        14.783(R)|      SLOW  |         8.975(R)|      FAST  |XLXI_87/choose2   |   0.000|
+G3          |        13.575(R)|      SLOW  |         8.138(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        14.122(R)|      SLOW  |         8.311(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        13.872(R)|      SLOW  |         8.283(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        14.853(R)|      SLOW  |         7.738(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        15.051(R)|      SLOW  |         9.044(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        15.326(R)|      SLOW  |         9.219(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        15.451(R)|      SLOW  |         9.211(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        14.678(R)|      SLOW  |         8.666(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        13.903(R)|      SLOW  |         8.320(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        13.589(R)|      SLOW  |         8.147(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        15.120(R)|      SLOW  |         8.946(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        14.399(R)|      SLOW  |         8.539(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        15.273(R)|      SLOW  |         9.181(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        14.637(R)|      SLOW  |         8.749(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        16.337(R)|      SLOW  |        10.014(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        15.413(R)|      SLOW  |         9.269(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        15.310(R)|      SLOW  |         8.970(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        13.139(R)|      SLOW  |         7.799(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        13.429(R)|      SLOW  |         7.752(R)|      FAST  |XLXI_87/choose3   |   0.000|
+G4          |        15.553(R)|      SLOW  |         9.453(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.100(R)|      SLOW  |         9.626(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.850(R)|      SLOW  |         9.598(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.831(R)|      SLOW  |        10.189(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.029(R)|      SLOW  |         7.219(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.304(R)|      SLOW  |        10.534(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.429(R)|      SLOW  |        10.526(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.656(R)|      SLOW  |         9.981(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.881(R)|      SLOW  |         9.635(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.567(R)|      SLOW  |         9.462(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.098(R)|      SLOW  |        10.261(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.377(R)|      SLOW  |         9.854(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.251(R)|      SLOW  |        10.496(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.615(R)|      SLOW  |        10.064(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.315(R)|      SLOW  |        11.329(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.391(R)|      SLOW  |        10.584(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.288(R)|      SLOW  |        10.285(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.117(R)|      SLOW  |         9.114(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.576(R)|      SLOW  |         7.293(R)|      FAST  |XLXI_87/choose4   |   0.000|
+G5          |        14.261(R)|      SLOW  |         8.670(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        14.808(R)|      SLOW  |         8.843(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        14.558(R)|      SLOW  |         8.815(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        15.539(R)|      SLOW  |         9.406(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        15.737(R)|      SLOW  |         9.576(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        16.012(R)|      SLOW  |         7.478(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        16.137(R)|      SLOW  |         9.743(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        15.364(R)|      SLOW  |         9.198(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        14.589(R)|      SLOW  |         8.852(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        14.275(R)|      SLOW  |         8.679(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        15.806(R)|      SLOW  |         9.478(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        15.085(R)|      SLOW  |         9.071(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        15.959(R)|      SLOW  |         9.713(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        15.323(R)|      SLOW  |         9.281(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        17.023(R)|      SLOW  |        10.546(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        16.099(R)|      SLOW  |         9.801(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        15.996(R)|      SLOW  |         9.502(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        13.825(R)|      SLOW  |         8.331(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        13.447(R)|      SLOW  |         8.118(R)|      FAST  |XLXI_87/choose5   |   0.000|
+G6          |        14.739(R)|      SLOW  |         8.879(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        15.286(R)|      SLOW  |         9.052(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.036(R)|      SLOW  |         9.024(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.017(R)|      SLOW  |         9.615(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        16.215(R)|      SLOW  |         9.785(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        16.490(R)|      SLOW  |         9.960(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        16.615(R)|      SLOW  |         7.189(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        15.842(R)|      SLOW  |         9.407(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.067(R)|      SLOW  |         9.061(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        14.753(R)|      SLOW  |         8.888(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        16.284(R)|      SLOW  |         9.687(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        15.563(R)|      SLOW  |         9.280(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        16.437(R)|      SLOW  |         9.922(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        15.801(R)|      SLOW  |         9.490(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        17.501(R)|      SLOW  |        10.755(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        16.577(R)|      SLOW  |        10.010(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        16.474(R)|      SLOW  |         9.711(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        14.303(R)|      SLOW  |         8.540(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        13.128(R)|      SLOW  |         7.759(R)|      FAST  |XLXI_87/choose6   |   0.000|
+G7          |        15.132(R)|      SLOW  |         9.138(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        15.679(R)|      SLOW  |         9.311(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.429(R)|      SLOW  |         9.283(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.410(R)|      SLOW  |         9.874(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        16.608(R)|      SLOW  |        10.044(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        16.883(R)|      SLOW  |        10.219(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.008(R)|      SLOW  |        10.211(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.235(R)|      SLOW  |         6.345(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.460(R)|      SLOW  |         9.320(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.146(R)|      SLOW  |         9.147(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        16.677(R)|      SLOW  |         9.946(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        15.956(R)|      SLOW  |         9.539(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        16.830(R)|      SLOW  |        10.181(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.194(R)|      SLOW  |         9.749(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        17.894(R)|      SLOW  |        11.014(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        16.970(R)|      SLOW  |        10.269(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        16.867(R)|      SLOW  |         9.970(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        14.696(R)|      SLOW  |         8.799(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        11.978(R)|      SLOW  |         6.925(R)|      FAST  |XLXI_87/choose7   |   0.000|
+G8          |        14.679(R)|      SLOW  |         8.825(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        15.226(R)|      SLOW  |         8.998(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        14.976(R)|      SLOW  |         8.970(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        15.957(R)|      SLOW  |         9.561(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        16.155(R)|      SLOW  |         9.731(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        16.430(R)|      SLOW  |         9.906(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        16.555(R)|      SLOW  |         9.898(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        15.782(R)|      SLOW  |         9.353(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.007(R)|      SLOW  |         6.354(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        14.693(R)|      SLOW  |         8.834(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        16.224(R)|      SLOW  |         9.633(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        15.503(R)|      SLOW  |         9.226(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        16.377(R)|      SLOW  |         9.868(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        15.741(R)|      SLOW  |         9.436(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        17.441(R)|      SLOW  |        10.701(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        16.517(R)|      SLOW  |         9.956(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        16.414(R)|      SLOW  |         9.657(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        14.243(R)|      SLOW  |         8.486(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        11.773(R)|      SLOW  |         6.928(R)|      FAST  |XLXI_87/choose8   |   0.000|
+LedGreen    |        12.143(R)|      SLOW  |         7.235(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        12.690(R)|      SLOW  |         7.408(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        12.440(R)|      SLOW  |         7.380(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        13.421(R)|      SLOW  |         7.971(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        13.619(R)|      SLOW  |         8.141(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        13.894(R)|      SLOW  |         8.316(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        14.019(R)|      SLOW  |         8.308(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        13.246(R)|      SLOW  |         7.763(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        12.471(R)|      SLOW  |         7.417(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        12.157(R)|      SLOW  |         7.244(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        13.688(R)|      SLOW  |         8.043(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        12.967(R)|      SLOW  |         7.636(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        13.841(R)|      SLOW  |         8.278(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        13.205(R)|      SLOW  |         7.846(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        14.905(R)|      SLOW  |         9.111(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        13.981(R)|      SLOW  |         8.366(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        13.878(R)|      SLOW  |         8.067(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        11.707(R)|      SLOW  |         6.896(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+LedRed      |        15.844(R)|      SLOW  |         9.684(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.391(R)|      SLOW  |         9.857(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        16.141(R)|      SLOW  |         9.829(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        17.122(R)|      SLOW  |        10.420(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.320(R)|      SLOW  |        10.590(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.595(R)|      SLOW  |        10.765(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.720(R)|      SLOW  |        10.757(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.947(R)|      SLOW  |        10.212(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        16.172(R)|      SLOW  |         9.866(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.858(R)|      SLOW  |         9.693(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.389(R)|      SLOW  |        10.492(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.668(R)|      SLOW  |        10.085(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.542(R)|      SLOW  |        10.727(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.906(R)|      SLOW  |        10.295(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.606(R)|      SLOW  |        11.560(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.682(R)|      SLOW  |        10.815(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.579(R)|      SLOW  |        10.516(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.408(R)|      SLOW  |         9.345(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+LedWin      |        14.047(R)|      SLOW  |         7.721(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        14.117(R)|      SLOW  |         8.117(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        13.746(R)|      SLOW  |         7.465(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        13.627(R)|      SLOW  |         7.921(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        13.690(R)|      SLOW  |         7.940(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        13.536(R)|      SLOW  |         7.437(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        13.552(R)|      SLOW  |         7.726(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        12.918(R)|      SLOW  |         7.442(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        14.375(R)|      SLOW  |         8.159(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        12.767(R)|      SLOW  |         7.516(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        14.576(R)|      SLOW  |         8.099(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        13.572(R)|      SLOW  |         7.409(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        14.830(R)|      SLOW  |         8.508(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        13.800(R)|      SLOW  |         8.135(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        14.289(R)|      SLOW  |         8.070(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        12.817(R)|      SLOW  |         7.214(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        13.347(R)|      SLOW  |         7.563(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        14.424(R)|      SLOW  |         8.135(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+R0          |        15.627(R)|      SLOW  |         9.444(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.174(R)|      SLOW  |         9.617(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.924(R)|      SLOW  |         9.589(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.905(R)|      SLOW  |        10.180(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.103(R)|      SLOW  |        10.350(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.378(R)|      SLOW  |        10.525(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.503(R)|      SLOW  |        10.517(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.730(R)|      SLOW  |         9.972(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.955(R)|      SLOW  |         9.626(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.641(R)|      SLOW  |         7.056(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.172(R)|      SLOW  |        10.252(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.451(R)|      SLOW  |         9.845(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.325(R)|      SLOW  |        10.487(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.689(R)|      SLOW  |        10.055(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.389(R)|      SLOW  |        11.320(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.465(R)|      SLOW  |        10.575(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.362(R)|      SLOW  |        10.276(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.191(R)|      SLOW  |         9.105(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.804(R)|      SLOW  |         7.503(R)|      FAST  |XLXI_87/choose0   |   0.000|
+R1          |        16.246(R)|      SLOW  |        10.011(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.793(R)|      SLOW  |        10.184(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        16.543(R)|      SLOW  |        10.156(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        17.524(R)|      SLOW  |        10.747(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.722(R)|      SLOW  |        10.917(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.997(R)|      SLOW  |        11.092(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        18.122(R)|      SLOW  |        11.084(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        17.349(R)|      SLOW  |        10.539(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        16.574(R)|      SLOW  |        10.193(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        16.260(R)|      SLOW  |        10.020(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.791(R)|      SLOW  |         7.831(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        17.070(R)|      SLOW  |        10.412(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.944(R)|      SLOW  |        11.054(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        17.308(R)|      SLOW  |        10.622(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        19.008(R)|      SLOW  |        11.887(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        18.084(R)|      SLOW  |        11.142(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.981(R)|      SLOW  |        10.843(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.810(R)|      SLOW  |         9.672(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        13.263(R)|      SLOW  |         7.818(R)|      FAST  |XLXI_87/choose1   |   0.000|
+R2          |        15.616(R)|      SLOW  |         9.398(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.163(R)|      SLOW  |         9.571(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.913(R)|      SLOW  |         9.543(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.894(R)|      SLOW  |        10.134(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.092(R)|      SLOW  |        10.304(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.367(R)|      SLOW  |        10.479(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.492(R)|      SLOW  |        10.471(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.719(R)|      SLOW  |         9.926(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.944(R)|      SLOW  |         9.580(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.630(R)|      SLOW  |         9.407(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.161(R)|      SLOW  |        10.206(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.440(R)|      SLOW  |         7.392(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.314(R)|      SLOW  |        10.441(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.678(R)|      SLOW  |        10.009(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.378(R)|      SLOW  |        11.274(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.454(R)|      SLOW  |        10.529(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.351(R)|      SLOW  |        10.230(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.180(R)|      SLOW  |         9.059(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        14.228(R)|      SLOW  |         8.460(R)|      FAST  |XLXI_87/choose2   |   0.000|
+R3          |        15.676(R)|      SLOW  |         9.523(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.223(R)|      SLOW  |         9.696(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.973(R)|      SLOW  |         9.668(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.954(R)|      SLOW  |        10.259(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.152(R)|      SLOW  |        10.429(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.427(R)|      SLOW  |        10.604(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.552(R)|      SLOW  |        10.596(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.779(R)|      SLOW  |        10.051(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        16.004(R)|      SLOW  |         9.705(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.690(R)|      SLOW  |         9.532(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.221(R)|      SLOW  |        10.331(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.500(R)|      SLOW  |         9.924(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.374(R)|      SLOW  |         7.216(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.738(R)|      SLOW  |        10.134(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.438(R)|      SLOW  |        11.399(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.514(R)|      SLOW  |        10.654(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.411(R)|      SLOW  |        10.355(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.240(R)|      SLOW  |         9.184(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.815(R)|      SLOW  |         7.397(R)|      FAST  |XLXI_87/choose3   |   0.000|
+R4          |        15.806(R)|      SLOW  |         9.526(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.353(R)|      SLOW  |         9.699(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        16.103(R)|      SLOW  |         9.671(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        17.084(R)|      SLOW  |        10.262(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.282(R)|      SLOW  |        10.432(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.557(R)|      SLOW  |        10.607(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.682(R)|      SLOW  |        10.599(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.909(R)|      SLOW  |        10.054(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        16.134(R)|      SLOW  |         9.708(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.820(R)|      SLOW  |         9.535(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.351(R)|      SLOW  |        10.334(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.630(R)|      SLOW  |         9.927(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.504(R)|      SLOW  |        10.569(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.868(R)|      SLOW  |         6.774(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.568(R)|      SLOW  |        11.402(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.644(R)|      SLOW  |        10.657(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.541(R)|      SLOW  |        10.358(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.370(R)|      SLOW  |         9.187(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.732(R)|      SLOW  |         7.418(R)|      FAST  |XLXI_87/choose4   |   0.000|
+R5          |        15.698(R)|      SLOW  |         9.530(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.245(R)|      SLOW  |         9.703(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.995(R)|      SLOW  |         9.675(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.976(R)|      SLOW  |        10.266(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.174(R)|      SLOW  |        10.436(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.449(R)|      SLOW  |        10.611(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.574(R)|      SLOW  |        10.603(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.801(R)|      SLOW  |        10.058(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        16.026(R)|      SLOW  |         9.712(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.712(R)|      SLOW  |         9.539(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.243(R)|      SLOW  |        10.338(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.522(R)|      SLOW  |         9.931(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.396(R)|      SLOW  |        10.573(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.760(R)|      SLOW  |        10.141(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.460(R)|      SLOW  |         8.091(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.536(R)|      SLOW  |        10.661(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.433(R)|      SLOW  |        10.362(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.262(R)|      SLOW  |         9.191(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        13.333(R)|      SLOW  |         8.041(R)|      FAST  |XLXI_87/choose5   |   0.000|
+R6          |        15.363(R)|      SLOW  |         9.247(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        15.910(R)|      SLOW  |         9.420(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.660(R)|      SLOW  |         9.392(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.641(R)|      SLOW  |         9.983(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        16.839(R)|      SLOW  |        10.153(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.114(R)|      SLOW  |        10.328(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.239(R)|      SLOW  |        10.320(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.466(R)|      SLOW  |         9.775(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.691(R)|      SLOW  |         9.429(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.377(R)|      SLOW  |         9.256(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        16.908(R)|      SLOW  |        10.055(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.187(R)|      SLOW  |         9.648(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.061(R)|      SLOW  |        10.290(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.425(R)|      SLOW  |         9.858(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.125(R)|      SLOW  |        11.123(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.201(R)|      SLOW  |         7.376(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.098(R)|      SLOW  |        10.079(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        14.927(R)|      SLOW  |         8.908(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        13.025(R)|      SLOW  |         7.653(R)|      FAST  |XLXI_87/choose6   |   0.000|
+R7          |        15.662(R)|      SLOW  |         9.414(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        16.209(R)|      SLOW  |         9.587(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.959(R)|      SLOW  |         9.559(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.940(R)|      SLOW  |        10.150(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        17.138(R)|      SLOW  |        10.320(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        17.413(R)|      SLOW  |        10.495(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        17.538(R)|      SLOW  |        10.487(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.765(R)|      SLOW  |         9.942(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.990(R)|      SLOW  |         9.596(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        15.676(R)|      SLOW  |         9.423(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        17.207(R)|      SLOW  |        10.222(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        16.486(R)|      SLOW  |         9.815(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        17.360(R)|      SLOW  |        10.457(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.724(R)|      SLOW  |        10.025(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        18.424(R)|      SLOW  |        11.290(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        17.500(R)|      SLOW  |        10.545(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        17.397(R)|      SLOW  |         6.408(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        15.226(R)|      SLOW  |         9.075(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        12.227(R)|      SLOW  |         7.121(R)|      FAST  |XLXI_87/choose7   |   0.000|
+R8          |        14.977(R)|      SLOW  |         8.988(R)|      FAST  |XLXI_86/SelG0     |   0.000|
+            |        15.524(R)|      SLOW  |         9.161(R)|      FAST  |XLXI_86/SelG1     |   0.000|
+            |        15.274(R)|      SLOW  |         9.133(R)|      FAST  |XLXI_86/SelG2     |   0.000|
+            |        16.255(R)|      SLOW  |         9.724(R)|      FAST  |XLXI_86/SelG3     |   0.000|
+            |        16.453(R)|      SLOW  |         9.894(R)|      FAST  |XLXI_86/SelG4     |   0.000|
+            |        16.728(R)|      SLOW  |        10.069(R)|      FAST  |XLXI_86/SelG5     |   0.000|
+            |        16.853(R)|      SLOW  |        10.061(R)|      FAST  |XLXI_86/SelG6     |   0.000|
+            |        16.080(R)|      SLOW  |         9.516(R)|      FAST  |XLXI_86/SelG7     |   0.000|
+            |        15.305(R)|      SLOW  |         9.170(R)|      FAST  |XLXI_86/SelG8     |   0.000|
+            |        14.991(R)|      SLOW  |         8.997(R)|      FAST  |XLXI_86/SelR0     |   0.000|
+            |        16.522(R)|      SLOW  |         9.796(R)|      FAST  |XLXI_86/SelR1     |   0.000|
+            |        15.801(R)|      SLOW  |         9.389(R)|      FAST  |XLXI_86/SelR2     |   0.000|
+            |        16.675(R)|      SLOW  |        10.031(R)|      FAST  |XLXI_86/SelR3     |   0.000|
+            |        16.039(R)|      SLOW  |         9.599(R)|      FAST  |XLXI_86/SelR4     |   0.000|
+            |        17.739(R)|      SLOW  |        10.864(R)|      FAST  |XLXI_86/SelR5     |   0.000|
+            |        16.815(R)|      SLOW  |        10.119(R)|      FAST  |XLXI_86/SelR6     |   0.000|
+            |        16.712(R)|      SLOW  |         9.820(R)|      FAST  |XLXI_86/SelR7     |   0.000|
+            |        14.541(R)|      SLOW  |         6.487(R)|      FAST  |XLXI_86/SelR8     |   0.000|
+            |        11.800(R)|      SLOW  |         6.933(R)|      FAST  |XLXI_87/choose8   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Button0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Button0        |    1.349|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Button1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Button1        |    0.983|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.481|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Dec 15 14:27:05 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -verilog counter0_8_drc.vf -w C:/xilinx__workspace/TicTacToe/counter0_8.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog counter0_8_drc.vf -w C:/xilinx__workspace/TicTacToe/counter0_8.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter0_8 C:/xilinx__workspace/TicTacToe/counter0_8.sch C:/xilinx__workspace/TicTacToe/counter0_8.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog counter0_8_drc.vf -w C:/xilinx__workspace/TicTacToe/counter0_8.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter0_8 C:/xilinx__workspace/TicTacToe/counter0_8.sch C:/xilinx__workspace/TicTacToe/counter0_8.sym 

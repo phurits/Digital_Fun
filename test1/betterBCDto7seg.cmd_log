@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym betterBCDto7seg C:/xilinx__workspace/test1/betterBCDto7seg.sch C:/xilinx__workspace/test1/betterBCDto7seg.sym 

@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Or16_8.vf
+// /___/   /\     Timestamp : 12/16/2021 00:03:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/TicTacToeV2/Or16_8.vf -w C:/xilinx__workspace/TicTacToeV2/Or16_8.sch
+//Design Name: Or16_8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Or16_8(A, 
+              B, 
+              O);
+
+    input [8:0] A;
+    input [8:0] B;
+   output [8:0] O;
+   
+   
+   OR2  XLXI_1 (.I0(B[0]), 
+               .I1(A[0]), 
+               .O(O[0]));
+   OR2  XLXI_2 (.I0(B[1]), 
+               .I1(A[1]), 
+               .O(O[1]));
+   OR2  XLXI_3 (.I0(B[2]), 
+               .I1(A[2]), 
+               .O(O[2]));
+   OR2  XLXI_4 (.I0(B[3]), 
+               .I1(A[3]), 
+               .O(O[3]));
+   OR2  XLXI_5 (.I0(B[4]), 
+               .I1(A[4]), 
+               .O(O[4]));
+   OR2  XLXI_6 (.I0(B[5]), 
+               .I1(A[5]), 
+               .O(O[5]));
+   OR2  XLXI_7 (.I0(B[6]), 
+               .I1(A[6]), 
+               .O(O[6]));
+   OR2  XLXI_8 (.I0(B[7]), 
+               .I1(A[7]), 
+               .O(O[7]));
+   OR2  XLXI_9 (.I0(B[8]), 
+               .I1(A[8]), 
+               .O(O[8]));
+endmodule

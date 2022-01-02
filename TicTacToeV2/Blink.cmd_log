@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Blink_drc.vf -w C:/xilinx__workspace/TicTacToeV2/Blink.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Blink C:/xilinx__workspace/TicTacToeV2/Blink.sch C:/xilinx__workspace/TicTacToeV2/Blink.sym 

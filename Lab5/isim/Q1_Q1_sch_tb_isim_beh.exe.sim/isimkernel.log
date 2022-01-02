@@ -1,0 +1,28 @@
+Command line:
+   Q1_Q1_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  54946
+
+Tue Sep 07 13:10:32 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5154.91 Meg
+
+ Total Signals          : 189
+ Total Nets             : 60
+ Total Signal Drivers   : 52
+ Total Blocks           : 46
+ Total Primitive Blocks : 44
+ Total Processes        : 55
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 144
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 4683.05 Meg
+
+Tue Sep 07 13:13:07 2021
+

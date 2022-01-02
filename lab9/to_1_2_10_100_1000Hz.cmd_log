@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym to_1_2_10_100_1000Hz D:/DigitalLab6/lab9/to_1_2_10_100_1000Hz.sch D:/DigitalLab6/lab9/to_1_2_10_100_1000Hz.sym 

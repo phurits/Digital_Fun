@@ -1,0 +1,21 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "G0" LOC = P124;
+NET "G1" LOC = P127;
+NET "G2" LOC = P132;
+NET "G3" LOC = P134;
+NET "G4" LOC = P138;
+NET "G5" LOC = P140;
+NET "G6" LOC = P142;
+NET "G7" LOC = P1;
+NET "G8" LOC = P5;
+NET "R0" LOC = P126;
+NET "R1" LOC = P131;
+NET "R2" LOC = P133;
+NET "R3" LOC = P137;
+NET "R4" LOC = P139;
+NET "R5" LOC = P141;
+NET "R6" LOC = P143;
+NET "R7" LOC = P2;
+NET "R8" LOC = P6;

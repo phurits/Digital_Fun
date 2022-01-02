@@ -1,0 +1,104 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : myShifterTest.vf
+// /___/   /\     Timestamp : 11/04/2020 17:47:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalLab6/lab9/myShifterTest.vf -w D:/DigitalLab6/lab9/myShifterTest.sch
+//Design Name: myShifterTest
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module BRLSHFT8_HXILINX_myShifterTest(O0, O1, O2, O3, O4, O5, O6, O7, I0, I1, I2, I3, I4, I5, I6, I7, S0, S1, S2) ;
+   
+   output             O0;
+   output             O1;
+   output             O2;
+   output             O3;
+   output             O4;
+   output             O5;
+   output             O6;
+   output             O7;
+
+   input              I0;
+   input              I1;
+   input              I2;
+   input              I3;
+   input              I4;
+   input              I5;
+   input              I6;
+   input              I7;
+   input              S0;
+   input              S1;
+   input              S2;
+   
+   reg                O0;
+   reg                O1;
+   reg                O2;
+   reg                O3;
+   reg                O4;
+   reg                O5;
+   reg                O6;
+   reg                O7;
+   
+   always @(I0 or I1 or I2 or I3 or I4 or I5 or I6 or I7 or S0 or S1 or S2)
+     begin
+	case ({S2,S1,S0})
+
+          3'b000 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I7, I6, I5, I4, I3, I2, I1, I0};
+          3'b001 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I0, I7, I6, I5, I4, I3, I2, I1};
+          3'b010 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I1, I0, I7, I6, I5, I4, I3, I2};
+          3'b011 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I2, I1, I0, I7, I6, I5, I4, I3};
+          3'b100 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I3, I2, I1, I0, I7, I6, I5, I4};
+          3'b101 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I4, I3, I2, I1, I0, I7, I6, I5};
+          3'b110 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I5, I4, I3, I2, I1, I0, I7, I6};
+          3'b111 : {O7, O6, O5, O4, O3, O2, O1, O0} = {I6, I5, I4, I3, I2, I1, I0, I7};
+
+        endcase
+     end
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module myShifterTest(A, 
+                     B);
+
+    input [7:0] A;
+   output [7:0] B;
+   
+   wire XLXN_14;
+   
+   (* HU_SET = "XLXI_1_37" *) 
+   BRLSHFT8_HXILINX_myShifterTest  XLXI_1 (.I0(A[0]), 
+                                          .I1(A[1]), 
+                                          .I2(A[2]), 
+                                          .I3(A[3]), 
+                                          .I4(A[4]), 
+                                          .I5(A[5]), 
+                                          .I6(A[6]), 
+                                          .I7(A[7]), 
+                                          .S0(), 
+                                          .S1(), 
+                                          .S2(), 
+                                          .O0(B[1]), 
+                                          .O1(B[2]), 
+                                          .O2(B[3]), 
+                                          .O3(B[4]), 
+                                          .O4(B[5]), 
+                                          .O5(B[6]), 
+                                          .O6(B[7]), 
+                                          .O7(XLXN_14));
+   GND  XLXI_3 (.G(B[0]));
+endmodule

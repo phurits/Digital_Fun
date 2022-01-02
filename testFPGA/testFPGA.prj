@@ -1,0 +1,7 @@
+verilog work "to_1_2_10_100_1000Hz.vf"
+verilog work "Toggle.vf"
+verilog work "ShiftBit.vf"
+verilog work "InputSelect4_1.vf"
+verilog work "ExclusiveOR.vf"
+verilog work "bcd_to7seg_hex.vf"
+verilog work "testFPGA.vf"

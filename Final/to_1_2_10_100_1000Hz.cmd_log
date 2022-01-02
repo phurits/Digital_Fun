@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym to_1_2_10_100_1000Hz C:/xilinx__workspace/Final/to_1_2_10_100_1000Hz.sch C:/xilinx__workspace/Final/to_1_2_10_100_1000Hz.sym 

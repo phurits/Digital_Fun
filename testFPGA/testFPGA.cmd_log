@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/xilinx__workspace/testFPGA/testFPGA.xst" -ofn "C:/xilinx__workspace/testFPGA/testFPGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc testFPGA.ucf -p xc6slx9-tqg144-3 testFPGA.ngc testFPGA.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testFPGA_map.ncd testFPGA.ngd testFPGA.pcf 
+par -w -intstyle ise -ol high -mt off testFPGA_map.ncd testFPGA.ncd testFPGA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testFPGA.twx testFPGA.ncd -o testFPGA.twr testFPGA.pcf -ucf testFPGA.ucf 
+bitgen -intstyle ise -f testFPGA.ut testFPGA.ncd 

@@ -1,0 +1,261 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : dataToLed_drc.vf
+// /___/   /\     Timestamp : 12/05/2021 17:27:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog dataToLed_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/dataToLed.sch
+//Design Name: dataToLed
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_dataToLed (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_dataToLed (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module dataToLed(Data, 
+                 Selector, 
+                 G, 
+                 R);
+
+    input [3:0] Data;
+    input Selector;
+   output [8:0] G;
+   output [8:0] R;
+   
+   wire S_green;
+   wire S_red;
+   wire XLXN_34;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_75;
+   wire XLXN_76;
+   wire XLXN_79;
+   wire XLXN_80;
+   wire XLXN_83;
+   wire XLXN_84;
+   wire XLXN_87;
+   wire XLXN_88;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_259;
+   wire XLXN_260;
+   wire XLXN_289;
+   wire XLXN_324;
+   wire XLXN_327;
+   wire XLXN_330;
+   wire XLXN_333;
+   wire XLXN_336;
+   wire XLXN_339;
+   wire XLXN_342;
+   wire XLXN_345;
+   
+   VCC  XLXI_16 (.P(XLXN_34));
+   (* HU_SET = "XLXI_81_0" *) 
+   D2_4E_HXILINX_dataToLed  XLXI_81 (.A0(Selector), 
+                                    .A1(XLXN_259), 
+                                    .E(XLXN_260), 
+                                    .D0(S_red), 
+                                    .D1(S_green), 
+                                    .D2(), 
+                                    .D3());
+   GND  XLXI_123 (.G(XLXN_259));
+   VCC  XLXI_124 (.P(XLXN_260));
+   (* HU_SET = "XLXI_125_1" *) 
+   D4_16E_HXILINX_dataToLed  XLXI_125 (.A0(Data[0]), 
+                                      .A1(Data[1]), 
+                                      .A2(Data[2]), 
+                                      .A3(Data[3]), 
+                                      .E(XLXN_34), 
+                                      .D0(XLXN_289), 
+                                      .D1(XLXN_324), 
+                                      .D2(XLXN_327), 
+                                      .D3(XLXN_330), 
+                                      .D4(XLXN_333), 
+                                      .D5(XLXN_336), 
+                                      .D6(XLXN_339), 
+                                      .D7(XLXN_342), 
+                                      .D8(XLXN_345), 
+                                      .D9(), 
+                                      .D10(), 
+                                      .D11(), 
+                                      .D12(), 
+                                      .D13(), 
+                                      .D14(), 
+                                      .D15());
+   AND2  XLXI_126 (.I0(XLXN_57), 
+                  .I1(XLXN_289), 
+                  .O(G[0]));
+   AND2  XLXI_127 (.I0(XLXN_289), 
+                  .I1(XLXN_58), 
+                  .O(R[0]));
+   AND2  XLXI_132 (.I0(XLXN_63), 
+                  .I1(XLXN_324), 
+                  .O(G[1]));
+   AND2  XLXI_133 (.I0(XLXN_324), 
+                  .I1(XLXN_64), 
+                  .O(R[1]));
+   AND2  XLXI_134 (.I0(XLXN_67), 
+                  .I1(XLXN_327), 
+                  .O(G[2]));
+   AND2  XLXI_135 (.I0(XLXN_327), 
+                  .I1(XLXN_68), 
+                  .O(R[2]));
+   AND2  XLXI_136 (.I0(XLXN_71), 
+                  .I1(XLXN_330), 
+                  .O(G[3]));
+   AND2  XLXI_137 (.I0(XLXN_330), 
+                  .I1(XLXN_72), 
+                  .O(R[3]));
+   AND2  XLXI_138 (.I0(XLXN_75), 
+                  .I1(XLXN_333), 
+                  .O(G[4]));
+   AND2  XLXI_139 (.I0(XLXN_333), 
+                  .I1(XLXN_76), 
+                  .O(R[4]));
+   AND2  XLXI_140 (.I0(XLXN_79), 
+                  .I1(XLXN_336), 
+                  .O(G[5]));
+   AND2  XLXI_141 (.I0(XLXN_336), 
+                  .I1(XLXN_80), 
+                  .O(R[5]));
+   AND2  XLXI_142 (.I0(XLXN_83), 
+                  .I1(XLXN_339), 
+                  .O(G[6]));
+   AND2  XLXI_143 (.I0(XLXN_339), 
+                  .I1(XLXN_84), 
+                  .O(R[6]));
+   AND2  XLXI_144 (.I0(XLXN_87), 
+                  .I1(XLXN_342), 
+                  .O(G[7]));
+   AND2  XLXI_145 (.I0(XLXN_342), 
+                  .I1(XLXN_88), 
+                  .O(R[7]));
+   AND2  XLXI_146 (.I0(XLXN_91), 
+                  .I1(XLXN_345), 
+                  .O(G[8]));
+   AND2  XLXI_147 (.I0(XLXN_345), 
+                  .I1(XLXN_92), 
+                  .O(R[8]));
+endmodule

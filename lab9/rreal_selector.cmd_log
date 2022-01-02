@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym rreal_selector D:/DigitalLab6/lab9/rreal_selector.sch D:/DigitalLab6/lab9/rreal_selector.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym rreal_selector D:/DigitalLab6/lab9/rreal_selector.sch D:/DigitalLab6/lab9/rreal_selector.sym 

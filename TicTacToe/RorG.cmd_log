@@ -1,0 +1,27 @@
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog RorG_drc.vf -w C:/xilinx__workspace/TicTacToe/RorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym RorG C:/xilinx__workspace/TicTacToe/RorG.sch C:/xilinx__workspace/TicTacToe/RorG.sym 

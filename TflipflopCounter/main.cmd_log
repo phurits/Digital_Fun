@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/xilinx__workspace/TflipflopCounter/main.xst" -ofn "C:/xilinx__workspace/TflipflopCounter/main.syr" 
+xst -intstyle ise -ifn "C:/xilinx__workspace/TflipflopCounter/main.xst" -ofn "C:/xilinx__workspace/TflipflopCounter/main.syr" 
+xst -intstyle ise -ifn "C:/xilinx__workspace/TflipflopCounter/main.xst" -ofn "C:/xilinx__workspace/TflipflopCounter/main.syr" 
+xst -intstyle ise -ifn "C:/xilinx__workspace/TflipflopCounter/main.xst" -ofn "C:/xilinx__workspace/TflipflopCounter/main.syr" 

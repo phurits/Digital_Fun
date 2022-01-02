@@ -1,0 +1,37 @@
+
+
+NET "A" LOC = P41;
+NET "B" LOC = P40;
+NET "C" LOC = P35;
+NET "com0" LOC = P44;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+NET "D" LOC = P34;
+NET "E" LOC = P32;
+NET "F" LOC = P29;
+NET "G" LOC = P27;
+NET "P47" LOC = P47;
+
+NET "P48" LOC = P48;
+NET "pinG0" LOC = P124;
+NET "pinG1" LOC = P127;
+NET "pinG2" LOC = P132;
+NET "pinG3" LOC = P134;
+NET "pinG4" LOC = P138;
+NET "pinG5" LOC = P140;
+NET "pinG6" LOC = P142;
+NET "pinG7" LOC = P1;
+NET "pinG8" LOC = P5;
+NET "pinR0" LOC = P126;
+NET "pinR1" LOC = P131;
+NET "pinR2" LOC = P133;
+NET "pinR3" LOC = P137;
+NET "pinR4" LOC = P139;
+NET "pinR5" LOC = P141;
+NET "pinR6" LOC = P143;
+NET "pinR7" LOC = P2;
+NET "pinR8" LOC = P6;
+
+# PlanAhead Generated physical constraints 
+

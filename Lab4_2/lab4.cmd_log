@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/xilinx__workspace/Lab4_2/lab4.xst" -ofn "C:/xilinx__workspace/Lab4_2/lab4.syr" 

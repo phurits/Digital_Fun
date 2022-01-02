@@ -1,0 +1,4 @@
+verilog work "Counter1_5.vf"
+verilog work "ClockDivisor.vf"
+verilog work "betterBCDto7seg.vf"
+verilog work "main.vf"

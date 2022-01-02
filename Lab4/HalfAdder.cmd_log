@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/xilinx__workspace/Lab4/HalfAdder.xst" -ofn "C:/xilinx__workspace/Lab4/HalfAdder.syr" 

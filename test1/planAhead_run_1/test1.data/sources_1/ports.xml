@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="CLK" Dir="IN"/>
+		<Port Id="A" Dir="OUT"/>
+		<Port Id="B" Dir="OUT"/>
+		<Port Id="Buzz" Dir="OUT"/>
+		<Port Id="C" Dir="OUT"/>
+		<Port Id="Com0" Dir="OUT"/>
+		<Port Id="Com1" Dir="OUT"/>
+		<Port Id="Com2" Dir="OUT"/>
+		<Port Id="Com3" Dir="OUT"/>
+		<Port Id="D" Dir="OUT"/>
+		<Port Id="E" Dir="OUT"/>
+		<Port Id="F" Dir="OUT"/>
+		<Port Id="G" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

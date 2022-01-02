@@ -1,0 +1,149 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Color_drc.vf
+// /___/   /\     Timestamp : 12/14/2021 23:00:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog Color_drc.vf -w C:/xilinx__workspace/TicTacToe/Color.sch
+//Design Name: Color
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_Color (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module Color(A, 
+             B, 
+             G, 
+             R);
+
+    input [8:0] A;
+    input [8:0] B;
+   output G;
+   output R;
+   
+   wire XLXN_3;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   
+   (* HU_SET = "XLXI_3_0" *) 
+   D2_4E_HXILINX_Color  XLXI_3 (.A0(XLXN_3), 
+                               .A1(XLXN_7), 
+                               .E(XLXN_8), 
+                               .D0(R), 
+                               .D1(G), 
+                               .D2(), 
+                               .D3());
+   GND  XLXI_4 (.G(XLXN_7));
+   VCC  XLXI_5 (.P(XLXN_8));
+   XOR2  XLXI_13 (.I0(B[0]), 
+                 .I1(A[0]), 
+                 .O(XLXN_44));
+   XOR2  XLXI_14 (.I0(B[1]), 
+                 .I1(A[1]), 
+                 .O(XLXN_45));
+   XOR2  XLXI_15 (.I0(B[2]), 
+                 .I1(A[2]), 
+                 .O(XLXN_46));
+   XOR2  XLXI_16 (.I0(B[3]), 
+                 .I1(A[3]), 
+                 .O(XLXN_47));
+   XOR2  XLXI_17 (.I0(B[4]), 
+                 .I1(A[4]), 
+                 .O(XLXN_48));
+   XOR2  XLXI_18 (.I0(B[5]), 
+                 .I1(A[5]), 
+                 .O(XLXN_49));
+   XOR2  XLXI_19 (.I0(B[6]), 
+                 .I1(A[6]), 
+                 .O(XLXN_50));
+   XOR2  XLXI_20 (.I0(B[7]), 
+                 .I1(A[7]), 
+                 .O(XLXN_51));
+   XOR2  XLXI_21 (.I0(B[8]), 
+                 .I1(A[8]), 
+                 .O(XLXN_59));
+   XOR2  XLXI_23 (.I0(XLXN_45), 
+                 .I1(XLXN_44), 
+                 .O(XLXN_52));
+   XOR2  XLXI_24 (.I0(XLXN_47), 
+                 .I1(XLXN_46), 
+                 .O(XLXN_53));
+   XOR2  XLXI_25 (.I0(XLXN_49), 
+                 .I1(XLXN_48), 
+                 .O(XLXN_54));
+   XOR2  XLXI_26 (.I0(XLXN_51), 
+                 .I1(XLXN_50), 
+                 .O(XLXN_55));
+   XOR2  XLXI_27 (.I0(XLXN_53), 
+                 .I1(XLXN_52), 
+                 .O(XLXN_56));
+   XOR2  XLXI_28 (.I0(XLXN_55), 
+                 .I1(XLXN_54), 
+                 .O(XLXN_57));
+   XOR2  XLXI_29 (.I0(XLXN_57), 
+                 .I1(XLXN_56), 
+                 .O(XLXN_58));
+   XOR2  XLXI_30 (.I0(XLXN_59), 
+                 .I1(XLXN_58), 
+                 .O(XLXN_3));
+endmodule

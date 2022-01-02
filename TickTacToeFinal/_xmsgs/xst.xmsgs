@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\xilinx__workspace\TickTacToeFinal\main.vf" Line 736: Input port <arg fmt="%s" index="1">XLXN_14</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\xilinx__workspace\TickTacToeFinal\main.vf" Line 785: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">XLXN_14</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_63</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_123</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">736</arg>: Output port &lt;<arg fmt="%s" index="3">divide_9</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_63</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">315</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_81</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">315</arg>: Output port &lt;<arg fmt="%s" index="3">D3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_81</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D9</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D10</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D11</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D12</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D13</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D14</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">325</arg>: Output port &lt;<arg fmt="%s" index="3">D15</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_125</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">346</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_197</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">353</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_198</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">360</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_199</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">367</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_200</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">374</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_201</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">381</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_202</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">388</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_203</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">395</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_204</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\xilinx__workspace\TickTacToeFinal\main.vf</arg>&quot; line <arg fmt="%s" index="2">402</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_205</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,244 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : addDataWithColor.vf
+// /___/   /\     Timestamp : 12/15/2021 00:21:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/TicTacToe/addDataWithColor.vf -w C:/xilinx__workspace/TicTacToe/addDataWithColor.sch
+//Design Name: addDataWithColor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module addDataWithColor(ColorG, 
+                        ColorR, 
+                        Data, 
+                        SelG, 
+                        SelR, 
+                        G, 
+                        R);
+
+    input [8:0] ColorG;
+    input [8:0] ColorR;
+    input [8:0] Data;
+    input SelG;
+    input SelR;
+   output [8:0] G;
+   output [8:0] R;
+   
+   wire Gchoose;
+   wire Rchoose;
+   wire XLXN_75;
+   wire XLXN_76;
+   wire XLXN_77;
+   wire XLXN_78;
+   wire XLXN_89;
+   wire XLXN_90;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_103;
+   wire XLXN_104;
+   wire XLXN_105;
+   wire XLXN_106;
+   wire XLXN_117;
+   wire XLXN_118;
+   wire XLXN_119;
+   wire XLXN_120;
+   wire XLXN_131;
+   wire XLXN_132;
+   wire XLXN_133;
+   wire XLXN_134;
+   wire XLXN_187;
+   wire XLXN_188;
+   wire XLXN_189;
+   wire XLXN_190;
+   wire XLXN_201;
+   wire XLXN_202;
+   wire XLXN_203;
+   wire XLXN_204;
+   wire XLXN_215;
+   wire XLXN_216;
+   wire XLXN_217;
+   wire XLXN_218;
+   wire XLXN_229;
+   wire XLXN_230;
+   wire XLXN_231;
+   wire XLXN_232;
+   
+   BUF  XLXI_39 (.I(SelR), 
+                .O(Rchoose));
+   BUF  XLXI_40 (.I(SelG), 
+                .O(Gchoose));
+   AND2  XLXI_41 (.I0(Data[0]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_75));
+   AND2  XLXI_42 (.I0(ColorR[0]), 
+                 .I1(Data[0]), 
+                 .O(XLXN_76));
+   AND2  XLXI_43 (.I0(Data[0]), 
+                 .I1(ColorG[0]), 
+                 .O(XLXN_77));
+   AND2  XLXI_44 (.I0(Gchoose), 
+                 .I1(Data[0]), 
+                 .O(XLXN_78));
+   OR2  XLXI_45 (.I0(XLXN_76), 
+                .I1(XLXN_75), 
+                .O(R[0]));
+   OR2  XLXI_46 (.I0(XLXN_78), 
+                .I1(XLXN_77), 
+                .O(G[0]));
+   AND2  XLXI_47 (.I0(Data[1]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_89));
+   AND2  XLXI_48 (.I0(ColorR[1]), 
+                 .I1(Data[1]), 
+                 .O(XLXN_90));
+   AND2  XLXI_49 (.I0(Data[1]), 
+                 .I1(ColorG[1]), 
+                 .O(XLXN_91));
+   AND2  XLXI_50 (.I0(Gchoose), 
+                 .I1(Data[1]), 
+                 .O(XLXN_92));
+   OR2  XLXI_51 (.I0(XLXN_90), 
+                .I1(XLXN_89), 
+                .O(R[1]));
+   OR2  XLXI_52 (.I0(XLXN_92), 
+                .I1(XLXN_91), 
+                .O(G[1]));
+   AND2  XLXI_53 (.I0(Data[2]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_103));
+   AND2  XLXI_54 (.I0(ColorR[2]), 
+                 .I1(Data[2]), 
+                 .O(XLXN_104));
+   AND2  XLXI_55 (.I0(Data[2]), 
+                 .I1(ColorG[2]), 
+                 .O(XLXN_105));
+   AND2  XLXI_56 (.I0(Gchoose), 
+                 .I1(Data[2]), 
+                 .O(XLXN_106));
+   OR2  XLXI_57 (.I0(XLXN_104), 
+                .I1(XLXN_103), 
+                .O(R[2]));
+   OR2  XLXI_58 (.I0(XLXN_106), 
+                .I1(XLXN_105), 
+                .O(G[2]));
+   AND2  XLXI_59 (.I0(Data[3]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_117));
+   AND2  XLXI_60 (.I0(ColorR[3]), 
+                 .I1(Data[3]), 
+                 .O(XLXN_118));
+   AND2  XLXI_61 (.I0(Data[3]), 
+                 .I1(ColorG[3]), 
+                 .O(XLXN_119));
+   AND2  XLXI_62 (.I0(Gchoose), 
+                 .I1(Data[3]), 
+                 .O(XLXN_120));
+   OR2  XLXI_63 (.I0(XLXN_118), 
+                .I1(XLXN_117), 
+                .O(R[3]));
+   OR2  XLXI_64 (.I0(XLXN_120), 
+                .I1(XLXN_119), 
+                .O(G[3]));
+   AND2  XLXI_65 (.I0(Data[4]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_131));
+   AND2  XLXI_66 (.I0(ColorR[4]), 
+                 .I1(Data[4]), 
+                 .O(XLXN_132));
+   AND2  XLXI_67 (.I0(Data[4]), 
+                 .I1(ColorG[4]), 
+                 .O(XLXN_133));
+   AND2  XLXI_68 (.I0(Gchoose), 
+                 .I1(Data[4]), 
+                 .O(XLXN_134));
+   OR2  XLXI_69 (.I0(XLXN_132), 
+                .I1(XLXN_131), 
+                .O(R[4]));
+   OR2  XLXI_70 (.I0(XLXN_134), 
+                .I1(XLXN_133), 
+                .O(G[4]));
+   AND2  XLXI_89 (.I0(Data[5]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_187));
+   AND2  XLXI_90 (.I0(ColorR[5]), 
+                 .I1(Data[5]), 
+                 .O(XLXN_188));
+   AND2  XLXI_91 (.I0(Data[5]), 
+                 .I1(ColorG[5]), 
+                 .O(XLXN_189));
+   AND2  XLXI_92 (.I0(Gchoose), 
+                 .I1(Data[5]), 
+                 .O(XLXN_190));
+   OR2  XLXI_93 (.I0(XLXN_188), 
+                .I1(XLXN_187), 
+                .O(R[5]));
+   OR2  XLXI_94 (.I0(XLXN_190), 
+                .I1(XLXN_189), 
+                .O(G[5]));
+   AND2  XLXI_95 (.I0(Data[6]), 
+                 .I1(Rchoose), 
+                 .O(XLXN_201));
+   AND2  XLXI_96 (.I0(ColorR[6]), 
+                 .I1(Data[6]), 
+                 .O(XLXN_202));
+   AND2  XLXI_97 (.I0(Data[6]), 
+                 .I1(ColorG[6]), 
+                 .O(XLXN_203));
+   AND2  XLXI_98 (.I0(Gchoose), 
+                 .I1(Data[6]), 
+                 .O(XLXN_204));
+   OR2  XLXI_99 (.I0(XLXN_202), 
+                .I1(XLXN_201), 
+                .O(R[6]));
+   OR2  XLXI_100 (.I0(XLXN_204), 
+                 .I1(XLXN_203), 
+                 .O(G[6]));
+   AND2  XLXI_101 (.I0(Data[7]), 
+                  .I1(Rchoose), 
+                  .O(XLXN_215));
+   AND2  XLXI_102 (.I0(ColorR[7]), 
+                  .I1(Data[7]), 
+                  .O(XLXN_216));
+   AND2  XLXI_103 (.I0(Data[7]), 
+                  .I1(ColorG[7]), 
+                  .O(XLXN_217));
+   AND2  XLXI_104 (.I0(Gchoose), 
+                  .I1(Data[7]), 
+                  .O(XLXN_218));
+   OR2  XLXI_105 (.I0(XLXN_216), 
+                 .I1(XLXN_215), 
+                 .O(R[7]));
+   OR2  XLXI_106 (.I0(XLXN_218), 
+                 .I1(XLXN_217), 
+                 .O(G[7]));
+   AND2  XLXI_107 (.I0(Data[8]), 
+                  .I1(Rchoose), 
+                  .O(XLXN_229));
+   AND2  XLXI_108 (.I0(ColorR[8]), 
+                  .I1(Data[8]), 
+                  .O(XLXN_230));
+   AND2  XLXI_109 (.I0(Data[8]), 
+                  .I1(ColorG[8]), 
+                  .O(XLXN_231));
+   AND2  XLXI_110 (.I0(Gchoose), 
+                  .I1(Data[8]), 
+                  .O(XLXN_232));
+   OR2  XLXI_111 (.I0(XLXN_230), 
+                 .I1(XLXN_229), 
+                 .O(R[8]));
+   OR2  XLXI_112 (.I0(XLXN_232), 
+                 .I1(XLXN_231), 
+                 .O(G[8]));
+endmodule

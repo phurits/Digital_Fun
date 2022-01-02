@@ -1,0 +1,7 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/to_1_2_10_100_1000Hz.vf,-w,C:/xilinx__workspace/testFPGA/to_1_2_10_100_1000Hz.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/InputSelect4_1.vf,-w,C:/xilinx__workspace/testFPGA/InputSelect4_1.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/Toggle.vf,-w,C:/xilinx__workspace/testFPGA/Toggle.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/ExclusiveOR.vf,-w,C:/xilinx__workspace/testFPGA/ExclusiveOR.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/ShiftBit.vf,-w,C:/xilinx__workspace/testFPGA/ShiftBit.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/bcd_to7seg_hex.vf,-w,C:/xilinx__workspace/testFPGA/bcd_to7seg_hex.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/xilinx__workspace/testFPGA/testFPGA.vf,-w,C:/xilinx__workspace/testFPGA/testFPGA.sch

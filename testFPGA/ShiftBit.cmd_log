@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ShiftBit_drc.vf -w C:/xilinx__workspace/testFPGA/ShiftBit.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ShiftBit C:/xilinx__workspace/testFPGA/ShiftBit.sch C:/xilinx__workspace/testFPGA/ShiftBit.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog ShiftBit_drc.vf -w C:/xilinx__workspace/testFPGA/ShiftBit.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ShiftBit C:/xilinx__workspace/testFPGA/ShiftBit.sch C:/xilinx__workspace/testFPGA/ShiftBit.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ShiftBit C:/xilinx__workspace/testFPGA/ShiftBit.sch C:/xilinx__workspace/testFPGA/ShiftBit.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ShiftBit C:/xilinx__workspace/testFPGA/ShiftBit.sch C:/xilinx__workspace/testFPGA/ShiftBit.sym 

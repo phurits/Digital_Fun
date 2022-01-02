@@ -1,0 +1,90 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Blink.vf
+// /___/   /\     Timestamp : 12/16/2021 00:03:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/TicTacToeV2/Blink.vf -w C:/xilinx__workspace/TicTacToeV2/Blink.sch
+//Design Name: Blink
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Blink(CLK, 
+             G, 
+             R, 
+             Gout, 
+             Rout);
+
+    input CLK;
+    input [8:0] G;
+    input [8:0] R;
+   output [8:0] Gout;
+   output [8:0] Rout;
+   
+   
+   AND2  XLXI_1 (.I0(R[0]), 
+                .I1(CLK), 
+                .O(Rout[0]));
+   AND2  XLXI_2 (.I0(CLK), 
+                .I1(G[0]), 
+                .O(Gout[0]));
+   AND2  XLXI_3 (.I0(R[1]), 
+                .I1(CLK), 
+                .O(Rout[1]));
+   AND2  XLXI_4 (.I0(CLK), 
+                .I1(G[1]), 
+                .O(Gout[1]));
+   AND2  XLXI_5 (.I0(R[2]), 
+                .I1(CLK), 
+                .O(Rout[2]));
+   AND2  XLXI_6 (.I0(CLK), 
+                .I1(G[2]), 
+                .O(Gout[2]));
+   AND2  XLXI_7 (.I0(R[3]), 
+                .I1(CLK), 
+                .O(Rout[3]));
+   AND2  XLXI_8 (.I0(CLK), 
+                .I1(G[3]), 
+                .O(Gout[3]));
+   AND2  XLXI_9 (.I0(R[4]), 
+                .I1(CLK), 
+                .O(Rout[4]));
+   AND2  XLXI_10 (.I0(CLK), 
+                 .I1(G[4]), 
+                 .O(Gout[4]));
+   AND2  XLXI_11 (.I0(R[5]), 
+                 .I1(CLK), 
+                 .O(Rout[5]));
+   AND2  XLXI_12 (.I0(CLK), 
+                 .I1(G[5]), 
+                 .O(Gout[5]));
+   AND2  XLXI_13 (.I0(R[6]), 
+                 .I1(CLK), 
+                 .O(Rout[6]));
+   AND2  XLXI_14 (.I0(CLK), 
+                 .I1(G[6]), 
+                 .O(Gout[6]));
+   AND2  XLXI_15 (.I0(R[7]), 
+                 .I1(CLK), 
+                 .O(Rout[7]));
+   AND2  XLXI_16 (.I0(CLK), 
+                 .I1(G[7]), 
+                 .O(Gout[7]));
+   AND2  XLXI_17 (.I0(R[8]), 
+                 .I1(CLK), 
+                 .O(Rout[8]));
+   AND2  XLXI_18 (.I0(CLK), 
+                 .I1(G[8]), 
+                 .O(Gout[8]));
+endmodule

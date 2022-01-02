@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ChooseRorG_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ChooseRorG C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog ChooseRorG_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ChooseRorG C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog ChooseRorG_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ChooseRorG C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ChooseRorG C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog ChooseRorG_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ChooseRorG C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sch C:/xilinx__workspace/TickTacToeFinal/ChooseRorG.sym 

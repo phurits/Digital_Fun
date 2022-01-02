@@ -1,0 +1,7 @@
+select figure at 722 1962 8 -branches -sn=1
+select all in 722 1950 793 1962 -branches -enclosed -sn=1
+select figure at 298 1279 8 -branches -sn=1
+select figure at 2535 742 8 -branches -sn=1
+select figure at 2586 871 8 -branches -sn=1
+select figure at 267 416 8 -branches -sn=1
+select figure at 310 1177 8 -branches -sn=1

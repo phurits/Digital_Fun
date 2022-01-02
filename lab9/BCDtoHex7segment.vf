@@ -1,0 +1,216 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : BCDtoHex7segment.vf
+// /___/   /\     Timestamp : 11/04/2020 17:26:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalLab6/lab9/BCDtoHex7segment.vf -w D:/DigitalLab6/lab9/BCDtoHex7segment.sch
+//Design Name: BCDtoHex7segment
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_BCDtoHex7segment (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module NOR6_HXILINX_BCDtoHex7segment (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = !(I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 1ns / 1ps
+
+module BCDtoHex7segment(BCD, 
+                        a, 
+                        b, 
+                        c, 
+                        d, 
+                        e, 
+                        f, 
+                        g);
+
+    input [3:0] BCD;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   
+   wire qwe;
+   wire XLXN_143;
+   wire XLXN_168;
+   wire XLXN_170;
+   wire XLXN_172;
+   wire XLXN_174;
+   wire XLXN_178;
+   wire XLXN_180;
+   wire XLXN_181;
+   wire XLXN_184;
+   wire XLXN_185;
+   wire XLXN_187;
+   wire XLXN_189;
+   wire XLXN_193;
+   wire XLXN_195;
+   wire XLXN_201;
+   
+   (* HU_SET = "XLXI_1_36" *) 
+   D4_16E_HXILINX_BCDtoHex7segment  XLXI_1 (.A0(BCD[0]), 
+                                           .A1(BCD[1]), 
+                                           .A2(BCD[2]), 
+                                           .A3(BCD[3]), 
+                                           .E(qwe), 
+                                           .D0(XLXN_143), 
+                                           .D1(XLXN_168), 
+                                           .D2(XLXN_170), 
+                                           .D3(XLXN_172), 
+                                           .D4(XLXN_174), 
+                                           .D5(XLXN_178), 
+                                           .D6(XLXN_180), 
+                                           .D7(XLXN_181), 
+                                           .D8(), 
+                                           .D9(XLXN_184), 
+                                           .D10(XLXN_185), 
+                                           .D11(XLXN_187), 
+                                           .D12(XLXN_189), 
+                                           .D13(XLXN_193), 
+                                           .D14(XLXN_195), 
+                                           .D15(XLXN_201));
+   NOR5  XLXI_78 (.I0(XLXN_193), 
+                 .I1(XLXN_189), 
+                 .I2(XLXN_187), 
+                 .I3(XLXN_174), 
+                 .I4(XLXN_168), 
+                 .O(a));
+   (* HU_SET = "XLXI_79_37" *) 
+   NOR6_HXILINX_BCDtoHex7segment  XLXI_79 (.I0(XLXN_201), 
+                                          .I1(XLXN_195), 
+                                          .I2(XLXN_189), 
+                                          .I3(XLXN_187), 
+                                          .I4(XLXN_180), 
+                                          .I5(XLXN_178), 
+                                          .O(b));
+   NOR4  XLXI_80 (.I0(XLXN_201), 
+                 .I1(XLXN_195), 
+                 .I2(XLXN_189), 
+                 .I3(XLXN_170), 
+                 .O(c));
+   (* HU_SET = "XLXI_82_38" *) 
+   NOR6_HXILINX_BCDtoHex7segment  XLXI_82 (.I0(XLXN_184), 
+                                          .I1(XLXN_181), 
+                                          .I2(XLXN_178), 
+                                          .I3(XLXN_174), 
+                                          .I4(XLXN_172), 
+                                          .I5(XLXN_168), 
+                                          .O(e));
+   (* HU_SET = "XLXI_83_39" *) 
+   NOR6_HXILINX_BCDtoHex7segment  XLXI_83 (.I0(XLXN_193), 
+                                          .I1(XLXN_189), 
+                                          .I2(XLXN_181), 
+                                          .I3(XLXN_172), 
+                                          .I4(XLXN_170), 
+                                          .I5(XLXN_168), 
+                                          .O(f));
+   NOR3  XLXI_84 (.I0(XLXN_181), 
+                 .I1(XLXN_168), 
+                 .I2(XLXN_143), 
+                 .O(g));
+   VCC  XLXI_86 (.P(qwe));
+   NOR5  XLXI_87 (.I0(XLXN_201), 
+                 .I1(XLXN_185), 
+                 .I2(XLXN_174), 
+                 .I3(XLXN_168), 
+                 .I4(XLXN_181), 
+                 .O(d));
+endmodule

@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family spartan6 -verilog chooseData_drc.vf -w C:/xilinx__workspace/TicTacToeV2/chooseData.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog chooseData_drc.vf -w C:/xilinx__workspace/TicTacToeV2/chooseData.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym chooseData C:/xilinx__workspace/TicTacToeV2/chooseData.sch C:/xilinx__workspace/TicTacToeV2/chooseData.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym chooseData C:/xilinx__workspace/TicTacToeV2/chooseData.sch C:/xilinx__workspace/TicTacToeV2/chooseData.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog chooseData_drc.vf -w C:/xilinx__workspace/TicTacToeV2/chooseData.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym chooseData C:/xilinx__workspace/TicTacToeV2/chooseData.sch C:/xilinx__workspace/TicTacToeV2/chooseData.sym 

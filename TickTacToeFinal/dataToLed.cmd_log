@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog dataToLed_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/dataToLed.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym dataToLed C:/xilinx__workspace/TickTacToeFinal/dataToLed.sch C:/xilinx__workspace/TickTacToeFinal/dataToLed.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym dataToLed C:/xilinx__workspace/TickTacToeFinal/dataToLed.sch C:/xilinx__workspace/TickTacToeFinal/dataToLed.sym 

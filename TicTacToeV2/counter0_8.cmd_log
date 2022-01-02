@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym counter0_8 C:/xilinx__workspace/TicTacToeV2/counter0_8.sch C:/xilinx__workspace/TicTacToeV2/counter0_8.sym 

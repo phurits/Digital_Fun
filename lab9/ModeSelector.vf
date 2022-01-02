@@ -1,0 +1,145 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ModeSelector.vf
+// /___/   /\     Timestamp : 11/04/2020 15:28:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/DigitalLab6/lab9/ModeSelector.vf -w D:/DigitalLab6/lab9/ModeSelector.sch
+//Design Name: ModeSelector
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_ModeSelector (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module ModeSelector(A, 
+                    B, 
+                    C, 
+                    D, 
+                    Sel, 
+                    SelOutPut);
+
+    input [7:0] A;
+    input [7:0] B;
+    input [7:0] C;
+    input [7:0] D;
+    input [1:0] Sel;
+   output [7:0] SelOutPut;
+   
+   wire XLXN_119;
+   
+   (* HU_SET = "XLXI_1_20" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_1 (.D0(A[0]), 
+                                      .D1(B[0]), 
+                                      .D2(C[0]), 
+                                      .D3(D[0]), 
+                                      .E(XLXN_119), 
+                                      .S0(Sel[0]), 
+                                      .S1(Sel[1]), 
+                                      .O(SelOutPut[0]));
+   (* HU_SET = "XLXI_23_17" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_23 (.D0(A[1]), 
+                                       .D1(B[1]), 
+                                       .D2(C[1]), 
+                                       .D3(D[1]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[1]));
+   (* HU_SET = "XLXI_24_18" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_24 (.D0(A[2]), 
+                                       .D1(B[2]), 
+                                       .D2(C[2]), 
+                                       .D3(D[2]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[2]));
+   (* HU_SET = "XLXI_25_19" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_25 (.D0(A[3]), 
+                                       .D1(B[3]), 
+                                       .D2(C[3]), 
+                                       .D3(D[3]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[3]));
+   VCC  XLXI_33 (.P(XLXN_119));
+   (* HU_SET = "XLXI_37_21" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_37 (.D0(A[6]), 
+                                       .D1(B[6]), 
+                                       .D2(C[6]), 
+                                       .D3(D[6]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[6]));
+   (* HU_SET = "XLXI_38_22" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_38 (.D0(A[7]), 
+                                       .D1(B[7]), 
+                                       .D2(C[7]), 
+                                       .D3(D[7]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[7]));
+   (* HU_SET = "XLXI_39_23" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_39 (.D0(A[5]), 
+                                       .D1(B[5]), 
+                                       .D2(C[5]), 
+                                       .D3(D[5]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[5]));
+   (* HU_SET = "XLXI_40_24" *) 
+   M4_1E_HXILINX_ModeSelector  XLXI_40 (.D0(A[4]), 
+                                       .D1(B[4]), 
+                                       .D2(C[4]), 
+                                       .D3(D[4]), 
+                                       .E(XLXN_119), 
+                                       .S0(Sel[0]), 
+                                       .S1(Sel[1]), 
+                                       .O(SelOutPut[4]));
+endmodule

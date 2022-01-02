@@ -1,0 +1,13 @@
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LedWithLightSave C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LedWithLightSave C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym LedWithLightSave C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LedWithLightSave C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sym 

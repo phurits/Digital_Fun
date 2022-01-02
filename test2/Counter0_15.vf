@@ -1,0 +1,106 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter0_15.vf
+// /___/   /\     Timestamp : 11/23/2021 15:25:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/test2/Counter0_15.vf -w C:/xilinx__workspace/test2/Counter0_15.sch
+//Design Name: Counter0_15
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Counter0_15(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0_15(Clk, 
+                   O);
+
+    input Clk;
+   output [3:0] O;
+   
+   wire XLXN_2;
+   wire XLXN_12;
+   wire XLXN_15;
+   wire XLXN_19;
+   wire [3:0] O_DUMMY;
+   
+   assign O[3:0] = O_DUMMY[3:0];
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_Counter0_15  XLXI_1 (.C(Clk), 
+                                    .CLR(XLXN_19), 
+                                    .J(XLXN_2), 
+                                    .K(XLXN_2), 
+                                    .Q(O_DUMMY[0]));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_Counter0_15  XLXI_2 (.C(Clk), 
+                                    .CLR(XLXN_19), 
+                                    .J(O_DUMMY[0]), 
+                                    .K(O_DUMMY[0]), 
+                                    .Q(O_DUMMY[1]));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_Counter0_15  XLXI_3 (.C(Clk), 
+                                    .CLR(XLXN_19), 
+                                    .J(XLXN_12), 
+                                    .K(XLXN_12), 
+                                    .Q(O_DUMMY[2]));
+   (* HU_SET = "XLXI_4_3" *) 
+   FJKC_HXILINX_Counter0_15  XLXI_4 (.C(Clk), 
+                                    .CLR(XLXN_19), 
+                                    .J(XLXN_15), 
+                                    .K(XLXN_15), 
+                                    .Q(O_DUMMY[3]));
+   AND2  XLXI_5 (.I0(O_DUMMY[1]), 
+                .I1(O_DUMMY[0]), 
+                .O(XLXN_12));
+   AND3  XLXI_6 (.I0(O_DUMMY[0]), 
+                .I1(O_DUMMY[1]), 
+                .I2(O_DUMMY[2]), 
+                .O(XLXN_15));
+   VCC  XLXI_7 (.P(XLXN_2));
+   GND  XLXI_8 (.G(XLXN_19));
+endmodule

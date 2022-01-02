@@ -1,0 +1,120 @@
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 
+xst -intstyle ise -ifn "D:/DigitalLab6/lab9/finalCircuit.xst" -ofn "D:/DigitalLab6/lab9/finalCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalCircuit.ucf -p xc6slx9-tqg144-3 finalCircuit.ngc finalCircuit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalCircuit_map.ncd finalCircuit.ngd finalCircuit.pcf 
+par -w -intstyle ise -ol high -mt off finalCircuit_map.ncd finalCircuit.ncd finalCircuit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml finalCircuit.twx finalCircuit.ncd -o finalCircuit.twr finalCircuit.pcf -ucf finalCircuit.ucf 
+bitgen -intstyle ise -f finalCircuit.ut finalCircuit.ncd 

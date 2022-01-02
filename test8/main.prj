@@ -1,0 +1,3 @@
+verilog work "bcd_to7seg_hex.vf"
+verilog work "AF.vf"
+verilog work "main.vf"

@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ExclusiveOR_drc.vf -w C:/xilinx__workspace/testFPGA/ExclusiveOR.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ExclusiveOR C:/xilinx__workspace/testFPGA/ExclusiveOR.sch C:/xilinx__workspace/testFPGA/ExclusiveOR.sym 

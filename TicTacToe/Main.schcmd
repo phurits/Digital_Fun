@@ -1,0 +1,11 @@
+select figure at 1046 1574 8 -branches -sn=1
+select figure at 1982 1389 8 -branches -sn=1
+select figure at 622 170 8 -branches -sn=1
+select figure at 931 403 8 -branches -sn=1
+select figure at 926 146 8 -branches -sn=1
+select figure at 1187 126 8 -branches -sn=1
+select figure at 1078 152 8 -branches -sn=1
+select figure at 251 675 8 -branches -sn=1
+select figure at 403 908 8 -branches -sn=1
+select figure at 656 1041 8 -branches -sn=1
+select all in 656 1041 706 1122 -branches -enclosed -sn=1

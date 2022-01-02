@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -verilog addDataWithColor_drc.vf -w C:/xilinx__workspace/TicTacToe/addDataWithColor.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym addDataWithColor C:/xilinx__workspace/TicTacToe/addDataWithColor.sch C:/xilinx__workspace/TicTacToe/addDataWithColor.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog addDataWithColor_drc.vf -w C:/xilinx__workspace/TicTacToe/addDataWithColor.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog addDataWithColor_drc.vf -w C:/xilinx__workspace/TicTacToe/addDataWithColor.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym addDataWithColor C:/xilinx__workspace/TicTacToe/addDataWithColor.sch C:/xilinx__workspace/TicTacToe/addDataWithColor.sym 

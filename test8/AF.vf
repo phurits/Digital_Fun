@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : AF.vf
+// /___/   /\     Timestamp : 11/23/2021 14:31:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/test8/AF.vf -w C:/xilinx__workspace/test8/AF.sch
+//Design Name: AF
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M2_1_HXILINX_AF (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= D0;
+      1'b1 : O <= D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module AF(inp, 
+          O);
+
+    input inp;
+   output [7:0] O;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   (* HU_SET = "XLXI_1_10" *) 
+   M2_1_HXILINX_AF  XLXI_1 (.D0(XLXN_3), 
+                           .D1(XLXN_4), 
+                           .S0(inp), 
+                           .O(O[0]));
+   (* HU_SET = "XLXI_2_11" *) 
+   M2_1_HXILINX_AF  XLXI_2 (.D0(XLXN_5), 
+                           .D1(XLXN_6), 
+                           .S0(inp), 
+                           .O(O[1]));
+   (* HU_SET = "XLXI_3_12" *) 
+   M2_1_HXILINX_AF  XLXI_3 (.D0(XLXN_7), 
+                           .D1(XLXN_8), 
+                           .S0(inp), 
+                           .O(O[2]));
+   (* HU_SET = "XLXI_4_13" *) 
+   M2_1_HXILINX_AF  XLXI_4 (.D0(XLXN_2), 
+                           .D1(XLXN_9), 
+                           .S0(inp), 
+                           .O(O[3]));
+   VCC  XLXI_5 (.P(XLXN_2));
+   VCC  XLXI_7 (.P(XLXN_7));
+   VCC  XLXI_8 (.P(XLXN_5));
+   VCC  XLXI_9 (.P(XLXN_3));
+   GND  XLXI_10 (.G(XLXN_8));
+   GND  XLXI_11 (.G(XLXN_4));
+   VCC  XLXI_12 (.P(XLXN_6));
+   VCC  XLXI_13 (.P(XLXN_9));
+endmodule

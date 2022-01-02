@@ -1,0 +1,372 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LedWithLightSave_drc.vf
+// /___/   /\     Timestamp : 12/10/2021 14:41:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog LedWithLightSave_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LedWithLightSave.sch
+//Design Name: LedWithLightSave
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKCE_HXILINX_LedWithLightSave(Q, C, CE, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(CE)
+        begin
+          if(!J)
+          begin
+            if(K)
+            Q <= 1'b0;
+          end
+          else
+          begin
+            if(!K)
+            Q <= 1'b1;
+            else 
+            Q <= !Q;
+          end
+        end
+     end
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_LedWithLightSave (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_LedWithLightSave (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module ChooseRorG_MUSER_LedWithLightSave(Data, 
+                                         selectGreen, 
+                                         Selector, 
+                                         selectRed, 
+                                         Green, 
+                                         Red, 
+                                         TC);
+
+    input Data;
+    input selectGreen;
+    input Selector;
+    input selectRed;
+   output Green;
+   output Red;
+   output TC;
+   
+   wire XLXN_49;
+   wire XLXN_54;
+   wire XLXN_63;
+   wire XLXN_67;
+   wire XLXN_77;
+   wire XLXN_79;
+   wire XLXN_84;
+   wire XLXN_85;
+   wire XLXN_113;
+   wire XLXN_114;
+   wire XLXN_115;
+   wire XLXN_118;
+   wire Green_DUMMY;
+   wire Red_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Green = Green_DUMMY;
+   assign Red = Red_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_29_0" *) 
+   FJKCE_HXILINX_LedWithLightSave  XLXI_29 (.C(XLXN_54), 
+                                           .CE(XLXN_118), 
+                                           .CLR(XLXN_113), 
+                                           .J(XLXN_49), 
+                                           .K(XLXN_49), 
+                                           .Q(TC_DUMMY));
+   VCC  XLXI_30 (.P(XLXN_49));
+   AND2  XLXI_35 (.I0(Data), 
+                 .I1(Selector), 
+                 .O(XLXN_54));
+   (* HU_SET = "XLXI_39_1" *) 
+   FJKCE_HXILINX_LedWithLightSave  XLXI_39 (.C(XLXN_67), 
+                                           .CE(XLXN_84), 
+                                           .CLR(XLXN_114), 
+                                           .J(XLXN_63), 
+                                           .K(XLXN_63), 
+                                           .Q(Red_DUMMY));
+   VCC  XLXI_40 (.P(XLXN_63));
+   VCC  XLXI_44 (.P(XLXN_79));
+   (* HU_SET = "XLXI_46_2" *) 
+   FJKCE_HXILINX_LedWithLightSave  XLXI_46 (.C(XLXN_77), 
+                                           .CE(XLXN_85), 
+                                           .CLR(XLXN_115), 
+                                           .J(XLXN_79), 
+                                           .K(XLXN_79), 
+                                           .Q(Green_DUMMY));
+   AND2  XLXI_47 (.I0(TC_DUMMY), 
+                 .I1(selectRed), 
+                 .O(XLXN_67));
+   AND2  XLXI_49 (.I0(TC_DUMMY), 
+                 .I1(selectGreen), 
+                 .O(XLXN_77));
+   NOR2  XLXI_51 (.I0(Green_DUMMY), 
+                 .I1(Red_DUMMY), 
+                 .O(XLXN_85));
+   NOR2  XLXI_52 (.I0(Green_DUMMY), 
+                 .I1(Red_DUMMY), 
+                 .O(XLXN_84));
+   GND  XLXI_64 (.G(XLXN_113));
+   GND  XLXI_65 (.G(XLXN_114));
+   GND  XLXI_66 (.G(XLXN_115));
+   NOR2  XLXI_67 (.I0(Green_DUMMY), 
+                 .I1(Red_DUMMY), 
+                 .O(XLXN_118));
+endmodule
+`timescale 1ns / 1ps
+
+module LedWithLightSave(Data, 
+                        Selector, 
+                        G, 
+                        R);
+
+    input [3:0] Data;
+    input Selector;
+   output [8:0] G;
+   output [8:0] R;
+   
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire D4;
+   wire D5;
+   wire D6;
+   wire D7;
+   wire D8;
+   wire S_green;
+   wire S_red;
+   wire XLXN_8;
+   wire XLXN_259;
+   wire XLXN_260;
+   
+   VCC  XLXI_1 (.P(XLXN_8));
+   (* HU_SET = "XLXI_81_3" *) 
+   D2_4E_HXILINX_LedWithLightSave  XLXI_81 (.A0(Selector), 
+                                           .A1(XLXN_259), 
+                                           .E(XLXN_260), 
+                                           .D0(S_red), 
+                                           .D1(S_green), 
+                                           .D2(), 
+                                           .D3());
+   GND  XLXI_123 (.G(XLXN_259));
+   VCC  XLXI_124 (.P(XLXN_260));
+   (* HU_SET = "XLXI_125_4" *) 
+   D4_16E_HXILINX_LedWithLightSave  XLXI_125 (.A0(Data[0]), 
+                                             .A1(Data[1]), 
+                                             .A2(Data[2]), 
+                                             .A3(Data[3]), 
+                                             .E(XLXN_8), 
+                                             .D0(D0), 
+                                             .D1(D1), 
+                                             .D2(D2), 
+                                             .D3(D3), 
+                                             .D4(D4), 
+                                             .D5(D5), 
+                                             .D6(D6), 
+                                             .D7(D7), 
+                                             .D8(D8), 
+                                             .D9(), 
+                                             .D10(), 
+                                             .D11(), 
+                                             .D12(), 
+                                             .D13(), 
+                                             .D14(), 
+                                             .D15());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_197 (.Data(D0), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[0]), 
+                                               .Red(R[0]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_198 (.Data(D1), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[1]), 
+                                               .Red(R[1]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_199 (.Data(D2), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[2]), 
+                                               .Red(R[2]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_200 (.Data(D3), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[3]), 
+                                               .Red(R[3]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_201 (.Data(D4), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[4]), 
+                                               .Red(R[4]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_202 (.Data(D5), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[5]), 
+                                               .Red(R[5]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_203 (.Data(D6), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[6]), 
+                                               .Red(R[6]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_204 (.Data(D7), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[7]), 
+                                               .Red(R[7]), 
+                                               .TC());
+   ChooseRorG_MUSER_LedWithLightSave  XLXI_205 (.Data(D8), 
+                                               .selectGreen(S_green), 
+                                               .Selector(Selector), 
+                                               .selectRed(S_red), 
+                                               .Green(G[8]), 
+                                               .Red(R[8]), 
+                                               .TC());
+endmodule

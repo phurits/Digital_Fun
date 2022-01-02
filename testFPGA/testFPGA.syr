@@ -1,0 +1,1032 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: testFPGA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testFPGA.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testFPGA"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : testFPGA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\to_1_2_10_100_1000Hz.vf" into library work
+Parsing module <CD4CE_HXILINX_to_1_2_10_100_1000Hz>.
+Parsing module <FJKC_HXILINX_to_1_2_10_100_1000Hz>.
+Parsing module <to_1_2_10_100_1000Hz>.
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\Toggle.vf" into library work
+Parsing module <FJKC_HXILINX_Toggle>.
+Parsing module <Toggle>.
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\ShiftBit.vf" into library work
+Parsing module <ShiftBit>.
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\InputSelect4_1.vf" into library work
+Parsing module <M4_1E_HXILINX_InputSelect4_1>.
+Parsing module <InputSelect4_1>.
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\ExclusiveOR.vf" into library work
+Parsing module <ExclusiveOR>.
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\bcd_to7seg_hex.vf" into library work
+Parsing module <OR6_HXILINX_bcd_to7seg_hex>.
+Parsing module <D2_4E_HXILINX_bcd_to7seg_hex>.
+Parsing module <M2_1_HXILINX_bcd_to7seg_hex>.
+Parsing module <bcd_to7seg_hex>.
+Analyzing Verilog file "C:\xilinx__workspace\testFPGA\testFPGA.vf" into library work
+Parsing module <ADD8_HXILINX_testFPGA>.
+Parsing module <INV8_HXILINX_testFPGA>.
+Parsing module <OR6_HXILINX_testFPGA>.
+Parsing module <CD4CE_HXILINX_testFPGA>.
+Parsing module <M4_1E_HXILINX_testFPGA>.
+Parsing module <FJKC_HXILINX_testFPGA>.
+Parsing module <D2_4E_HXILINX_testFPGA>.
+Parsing module <M2_1_HXILINX_testFPGA>.
+Parsing module <InputSelect4_1_MUSER_testFPGA>.
+Parsing module <to_1_2_10_100_1000Hz_MUSER_testFPGA>.
+Parsing module <bcd_to7seg_hex_MUSER_testFPGA>.
+Parsing module <ShiftBit_MUSER_testFPGA>.
+Parsing module <ExclusiveOR_MUSER_testFPGA>.
+Parsing module <Toggle_MUSER_testFPGA>.
+Parsing module <testFPGA>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <testFPGA>.
+
+Elaborating module <ADD8_HXILINX_testFPGA>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+
+Elaborating module <INV8_HXILINX_testFPGA>.
+
+Elaborating module <Toggle_MUSER_testFPGA>.
+
+Elaborating module <FJKC_HXILINX_testFPGA>.
+
+Elaborating module <ExclusiveOR_MUSER_testFPGA>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <ShiftBit_MUSER_testFPGA>.
+
+Elaborating module <BUF>.
+
+Elaborating module <bcd_to7seg_hex_MUSER_testFPGA>.
+
+Elaborating module <M2_1_HXILINX_testFPGA>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND2>.
+
+Elaborating module <AND3>.
+
+Elaborating module <OR5>.
+
+Elaborating module <OR6_HXILINX_testFPGA>.
+
+Elaborating module <OR4>.
+
+Elaborating module <D2_4E_HXILINX_testFPGA>.
+
+Elaborating module <to_1_2_10_100_1000Hz_MUSER_testFPGA>.
+
+Elaborating module <CD4CE_HXILINX_testFPGA>.
+WARNING:HDLCompiler:413 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 105: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 384: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 396: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 408: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 420: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 432: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 444: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 456: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 463: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 483: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 489: Input port CLR is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" Line 495: Input port CLR is not connected on this instance
+
+Elaborating module <InputSelect4_1_MUSER_testFPGA>.
+
+Elaborating module <M4_1E_HXILINX_testFPGA>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Set property "HU_SET = XLXI_29_52" for instance <XLXI_29>.
+    Set property "HU_SET = XLXI_30_53" for instance <XLXI_30>.
+    Set property "HU_SET = XLXI_33_54" for instance <XLXI_33>.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1027: Output port <CO> of the instance <XLXI_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1027: Output port <OFL> of the instance <XLXI_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1034: Output port <CO> of the instance <XLXI_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1034: Output port <OFL> of the instance <XLXI_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1065: Output port <to1hz> of the instance <XLXI_58> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1065: Output port <to2hz> of the instance <XLXI_58> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1065: Output port <to10hz> of the instance <XLXI_58> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 1065: Output port <to100hz> of the instance <XLXI_58> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <testFPGA> synthesized.
+
+Synthesizing Unit <ADD8_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Found 9-bit adder for signal <n0019> created at line 34.
+    Found 9-bit adder for signal <n0010> created at line 34.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ADD8_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <INV8_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Summary:
+	no macro.
+Unit <INV8_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <Toggle_MUSER_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Set property "HU_SET = XLXI_17_51" for instance <XLXI_17>.
+    Summary:
+	no macro.
+Unit <Toggle_MUSER_testFPGA> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <ExclusiveOR_MUSER_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Summary:
+	no macro.
+Unit <ExclusiveOR_MUSER_testFPGA> synthesized.
+
+Synthesizing Unit <ShiftBit_MUSER_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+WARNING:Xst:647 - Input <A<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <O<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ShiftBit_MUSER_testFPGA> synthesized.
+
+Synthesizing Unit <bcd_to7seg_hex_MUSER_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Set property "HU_SET = XLXI_1_45" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_32_46" for instance <XLXI_32>.
+    Set property "HU_SET = XLXI_89_47" for instance <XLXI_89>.
+    Set property "HU_SET = XLXI_94_48" for instance <XLXI_94>.
+    Set property "HU_SET = XLXI_95_49" for instance <XLXI_95>.
+    Set property "HU_SET = XLXI_96_50" for instance <XLXI_96>.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 860: Output port <D2> of the instance <XLXI_89> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 860: Output port <D3> of the instance <XLXI_89> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <bcd_to7seg_hex_MUSER_testFPGA> synthesized.
+
+Synthesizing Unit <M2_1_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <M2_1_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <OR6_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Summary:
+	no macro.
+Unit <OR6_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <D2_4E_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <D2_4E_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <to_1_2_10_100_1000Hz_MUSER_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Set property "HU_SET = XLXI_31_34" for instance <XLXI_31>.
+    Set property "HU_SET = XLXI_33_35" for instance <XLXI_33>.
+    Set property "HU_SET = XLXI_36_36" for instance <XLXI_36>.
+    Set property "HU_SET = XLXI_38_37" for instance <XLXI_38>.
+    Set property "HU_SET = XLXI_52_38" for instance <XLXI_52>.
+    Set property "HU_SET = XLXI_54_39" for instance <XLXI_54>.
+    Set property "HU_SET = XLXI_63_41" for instance <XLXI_63>.
+    Set property "HU_SET = XLXI_67_40" for instance <XLXI_67>.
+    Set property "HU_SET = XLXI_137_42" for instance <XLXI_137>.
+    Set property "HU_SET = XLXI_138_43" for instance <XLXI_138>.
+    Set property "HU_SET = XLXI_139_44" for instance <XLXI_139>.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_31', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_33', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_36', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_38', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_52', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_54', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_63', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_67', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_137', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_138', is tied to GND.
+WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_139', is tied to GND.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 384: Output port <CEO> of the instance <XLXI_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 384: Output port <Q0> of the instance <XLXI_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 384: Output port <Q1> of the instance <XLXI_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 384: Output port <Q2> of the instance <XLXI_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 384: Output port <Q3> of the instance <XLXI_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 396: Output port <CEO> of the instance <XLXI_33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 396: Output port <Q0> of the instance <XLXI_33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 396: Output port <Q1> of the instance <XLXI_33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 396: Output port <Q2> of the instance <XLXI_33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 396: Output port <Q3> of the instance <XLXI_33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 408: Output port <CEO> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 408: Output port <Q0> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 408: Output port <Q1> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 408: Output port <Q2> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 408: Output port <Q3> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 420: Output port <CEO> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 420: Output port <Q0> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 420: Output port <Q1> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 420: Output port <Q2> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 420: Output port <Q3> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 432: Output port <CEO> of the instance <XLXI_52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 432: Output port <Q0> of the instance <XLXI_52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 432: Output port <Q1> of the instance <XLXI_52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 432: Output port <Q2> of the instance <XLXI_52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 432: Output port <Q3> of the instance <XLXI_52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 444: Output port <CEO> of the instance <XLXI_54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 444: Output port <Q0> of the instance <XLXI_54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 444: Output port <Q1> of the instance <XLXI_54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 444: Output port <Q2> of the instance <XLXI_54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 444: Output port <Q3> of the instance <XLXI_54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 463: Output port <CEO> of the instance <XLXI_67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 463: Output port <Q0> of the instance <XLXI_67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 463: Output port <Q1> of the instance <XLXI_67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 463: Output port <Q2> of the instance <XLXI_67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx__workspace\testFPGA\testFPGA.vf" line 463: Output port <Q3> of the instance <XLXI_67> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <to_1_2_10_100_1000Hz_MUSER_testFPGA> synthesized.
+
+Synthesizing Unit <CD4CE_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+        TERMINAL_COUNT = 4'b1001
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Found 1-bit register for signal <Q0>.
+    Found 4-bit adder for signal <Q3_GND_22_o_add_4_OUT> created at line 105.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <CD4CE_HXILINX_testFPGA> synthesized.
+
+Synthesizing Unit <InputSelect4_1_MUSER_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Set property "HU_SET = XLXI_1_26" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_27" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_29" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_28" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_27_30" for instance <XLXI_27>.
+    Set property "HU_SET = XLXI_29_31" for instance <XLXI_29>.
+    Set property "HU_SET = XLXI_33_32" for instance <XLXI_33>.
+    Set property "HU_SET = XLXI_34_33" for instance <XLXI_34>.
+    Summary:
+	no macro.
+Unit <InputSelect4_1_MUSER_testFPGA> synthesized.
+
+Synthesizing Unit <M4_1E_HXILINX_testFPGA>.
+    Related source file is "C:\xilinx__workspace\testFPGA\testFPGA.vf".
+    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 136.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M4_1E_HXILINX_testFPGA> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 11
+ 4-bit adder                                           : 7
+ 9-bit adder                                           : 4
+# Registers                                            : 34
+ 1-bit register                                        : 34
+# Multiplexers                                         : 85
+ 1-bit 2-to-1 multiplexer                              : 77
+ 1-bit 4-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <XLXI_63> is unconnected in block <XLXI_58>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 4-bit adder                                           : 7
+ 9-bit adder carry in                                  : 2
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Multiplexers                                         : 81
+ 1-bit 2-to-1 multiplexer                              : 73
+ 1-bit 4-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <testFPGA> ...
+
+Optimizing unit <ExclusiveOR_MUSER_testFPGA> ...
+
+Optimizing unit <to_1_2_10_100_1000Hz_MUSER_testFPGA> ...
+
+Optimizing unit <InputSelect4_1_MUSER_testFPGA> ...
+
+Optimizing unit <ADD8_HXILINX_testFPGA> ...
+
+Optimizing unit <INV8_HXILINX_testFPGA> ...
+
+Optimizing unit <CD4CE_HXILINX_testFPGA> ...
+
+Optimizing unit <FJKC_HXILINX_testFPGA> ...
+
+Optimizing unit <M4_1E_HXILINX_testFPGA> ...
+
+Optimizing unit <XLXI_96> ...
+
+Optimizing unit <XLXI_95> ...
+
+Optimizing unit <XLXI_94> ...
+
+Optimizing unit <XLXI_1> ...
+
+Optimizing unit <bcd_to7seg_hex_MUSER_testFPGA> ...
+
+Optimizing unit <D2_4E_HXILINX_testFPGA> ...
+
+Optimizing unit <OR6_HXILINX_testFPGA> ...
+WARNING:Xst:1290 - Hierarchical block <XLXI_58/XLXI_63> is unconnected in block <testFPGA>.
+   It will be removed from the design.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testFPGA, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : testFPGA.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 223
+#      AND2                        : 23
+#      AND3                        : 12
+#      BUF                         : 11
+#      GND                         : 1
+#      INV                         : 74
+#      LUT2                        : 16
+#      LUT3                        : 18
+#      LUT4                        : 14
+#      LUT5                        : 1
+#      LUT6                        : 8
+#      MUXCY                       : 14
+#      OR4                         : 2
+#      OR5                         : 4
+#      VCC                         : 1
+#      XOR2                        : 8
+#      XORCY                       : 16
+# FlipFlops/Latches                : 33
+#      FDC                         : 5
+#      FDCE                        : 28
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 18
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              33  out of  11440     0%  
+ Number of Slice LUTs:                  131  out of   5720     2%  
+    Number used as Logic:               131  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    164
+   Number with an unused Flip Flop:     131  out of    164    79%  
+   Number with an unused LUT:            33  out of    164    20%  
+   Number of fully used LUT-FF pairs:     0  out of    164     0%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    102    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+----------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)      | Load  |
+-----------------------------------------------+----------------------------+-------+
+XLXI_58/XLXI_54/TC(XLXI_58/XLXI_54/Mmux_TC11:O)| NONE(*)(XLXI_58/XLXI_67/Q3)| 5     |
+XLXI_58/XLXI_52/TC(XLXI_58/XLXI_52/Mmux_TC11:O)| NONE(*)(XLXI_58/XLXI_54/Q3)| 5     |
+XLXI_58/XLXI_38/TC(XLXI_58/XLXI_38/Mmux_TC11:O)| NONE(*)(XLXI_58/XLXI_52/Q3)| 5     |
+XLXI_58/XLXI_36/TC(XLXI_58/XLXI_36/Mmux_TC11:O)| NONE(*)(XLXI_58/XLXI_38/Q3)| 4     |
+XLXI_58/XLXI_33/TC(XLXI_58/XLXI_33/Mmux_TC11:O)| NONE(*)(XLXI_58/XLXI_36/Q3)| 4     |
+XLXI_58/XLXI_31/TC(XLXI_58/XLXI_31/Mmux_TC11:O)| NONE(*)(XLXI_58/XLXI_33/Q3)| 4     |
+P123                                           | BUFGP                      | 4     |
+XLXN_180(XLXI_60:O)                            | NONE(*)(XLXI_35/XLXI_17/Q) | 1     |
+XLXN_181(XLXI_59:O)                            | NONE(*)(XLXI_34/XLXI_17/Q) | 1     |
+-----------------------------------------------+----------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.190ns (Maximum Frequency: 456.663MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 9.933ns
+   Maximum combinational path delay: 12.277ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_58/XLXI_54/TC'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 12 / 5
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_67/Q0 (FF)
+  Destination:       XLXI_58/XLXI_67/Q0 (FF)
+  Source Clock:      XLXI_58/XLXI_54/TC falling
+  Destination Clock: XLXI_58/XLXI_54/TC falling
+
+  Data Path: XLXI_58/XLXI_67/Q0 to XLXI_58/XLXI_67/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_58/XLXI_52/TC'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 12 / 5
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_54/Q0 (FF)
+  Destination:       XLXI_58/XLXI_54/Q0 (FF)
+  Source Clock:      XLXI_58/XLXI_52/TC falling
+  Destination Clock: XLXI_58/XLXI_52/TC falling
+
+  Data Path: XLXI_58/XLXI_54/Q0 to XLXI_58/XLXI_54/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_58/XLXI_38/TC'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 12 / 5
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_52/Q0 (FF)
+  Destination:       XLXI_58/XLXI_52/Q0 (FF)
+  Source Clock:      XLXI_58/XLXI_38/TC falling
+  Destination Clock: XLXI_58/XLXI_38/TC falling
+
+  Data Path: XLXI_58/XLXI_52/Q0 to XLXI_58/XLXI_52/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_58/XLXI_36/TC'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_38/Q0 (FF)
+  Destination:       XLXI_58/XLXI_38/Q0 (FF)
+  Source Clock:      XLXI_58/XLXI_36/TC falling
+  Destination Clock: XLXI_58/XLXI_36/TC falling
+
+  Data Path: XLXI_58/XLXI_38/Q0 to XLXI_58/XLXI_38/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_58/XLXI_33/TC'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_36/Q0 (FF)
+  Destination:       XLXI_58/XLXI_36/Q0 (FF)
+  Source Clock:      XLXI_58/XLXI_33/TC falling
+  Destination Clock: XLXI_58/XLXI_33/TC falling
+
+  Data Path: XLXI_58/XLXI_36/Q0 to XLXI_58/XLXI_36/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_58/XLXI_31/TC'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_33/Q0 (FF)
+  Destination:       XLXI_58/XLXI_33/Q0 (FF)
+  Source Clock:      XLXI_58/XLXI_31/TC falling
+  Destination Clock: XLXI_58/XLXI_31/TC falling
+
+  Data Path: XLXI_58/XLXI_33/Q0 to XLXI_58/XLXI_33/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'P123'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            XLXI_58/XLXI_31/Q0 (FF)
+  Destination:       XLXI_58/XLXI_31/Q0 (FF)
+  Source Clock:      P123 rising
+  Destination Clock: P123 rising
+
+  Data Path: XLXI_58/XLXI_31/Q0 to XLXI_58/XLXI_31/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_22_o_MUX_24_o11_INV_0 (Q3_GND_22_o_MUX_24_o)
+     FDCE:D                    0.102          Q0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_180'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            XLXI_35/XLXI_17/Q (FF)
+  Destination:       XLXI_35/XLXI_17/Q (FF)
+  Source Clock:      XLXN_180 rising
+  Destination Clock: XLXN_180 rising
+
+  Data Path: XLXI_35/XLXI_17/Q to XLXI_35/XLXI_17/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   0.856  Q (Q)
+     INV:I->O              1   0.206   0.579  Mmux_Q_Q_MUX_3_o11_INV_0 (Q_Q_MUX_3_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_181'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            XLXI_34/XLXI_17/Q (FF)
+  Destination:       XLXI_34/XLXI_17/Q (FF)
+  Source Clock:      XLXN_181 rising
+  Destination Clock: XLXN_181 rising
+
+  Data Path: XLXI_34/XLXI_17/Q to XLXI_34/XLXI_17/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   0.856  Q (Q)
+     INV:I->O              1   0.206   0.579  Mmux_Q_Q_MUX_3_o11_INV_0 (Q_Q_MUX_3_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_181'
+  Total number of paths / destination ports: 159 / 8
+-------------------------------------------------------------------------
+Offset:              9.776ns (Levels of Logic = 9)
+  Source:            XLXI_34/XLXI_17/Q (FF)
+  Destination:       P27 (PAD)
+  Source Clock:      XLXN_181 rising
+
+  Data Path: XLXI_34/XLXI_17/Q to P27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   1.201  Q (Q)
+     end scope: 'XLXI_34/XLXI_17:Q'
+     begin scope: 'XLXI_62/XLXI_1:S1'
+     LUT5:I0->O            1   0.203   0.684  Mmux_O11 (O)
+     end scope: 'XLXI_62/XLXI_1:O'
+     begin scope: 'XLXI_57/XLXI_96:D0'
+     LUT3:I1->O           17   0.203   1.027  Mmux_O11 (O)
+     end scope: 'XLXI_57/XLXI_96:O'
+     INV:I->O              1   0.568   0.944  XLXI_57/XLXI_21 (XLXI_57/XLXN_37)
+     AND3:I0->O            1   0.203   0.944  XLXI_57/XLXI_18 (XLXI_57/XLXN_45)
+     begin scope: 'XLXI_57/XLXI_32:I4'
+     LUT6:I0->O            1   0.203   0.579  O1 (O)
+     end scope: 'XLXI_57/XLXI_32:O'
+     OBUF:I->O                 2.571          P40_OBUF (P40)
+    ----------------------------------------
+    Total                      9.776ns (4.398ns logic, 5.378ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_180'
+  Total number of paths / destination ports: 159 / 8
+-------------------------------------------------------------------------
+Offset:              9.882ns (Levels of Logic = 9)
+  Source:            XLXI_35/XLXI_17/Q (FF)
+  Destination:       P27 (PAD)
+  Source Clock:      XLXN_180 rising
+
+  Data Path: XLXI_35/XLXI_17/Q to P27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   1.221  Q (Q)
+     end scope: 'XLXI_35/XLXI_17:Q'
+     begin scope: 'XLXI_62/XLXI_4:S0'
+     LUT6:I0->O            1   0.203   0.684  Mmux_O11 (O)
+     end scope: 'XLXI_62/XLXI_4:O'
+     begin scope: 'XLXI_57/XLXI_1:D0'
+     LUT3:I1->O           21   0.203   1.113  Mmux_O11 (O)
+     end scope: 'XLXI_57/XLXI_1:O'
+     INV:I->O              1   0.568   0.827  XLXI_57/XLXI_19 (XLXI_57/XLXN_35)
+     AND3:I2->O            1   0.320   0.944  XLXI_57/XLXI_18 (XLXI_57/XLXN_45)
+     begin scope: 'XLXI_57/XLXI_32:I4'
+     LUT6:I0->O            1   0.203   0.579  O1 (O)
+     end scope: 'XLXI_57/XLXI_32:O'
+     OBUF:I->O                 2.571          P40_OBUF (P40)
+    ----------------------------------------
+    Total                      9.882ns (4.515ns logic, 5.367ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_58/XLXI_38/TC'
+  Total number of paths / destination ports: 81 / 9
+-------------------------------------------------------------------------
+Offset:              9.933ns (Levels of Logic = 8)
+  Source:            XLXI_58/XLXI_139/Q (FF)
+  Destination:       P27 (PAD)
+  Source Clock:      XLXI_58/XLXI_38/TC falling
+
+  Data Path: XLXI_58/XLXI_139/Q to P27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  Q (Q)
+     end scope: 'XLXI_58/XLXI_139:Q'
+     BUF:I->O              6   0.568   0.973  XLXI_58/XLXI_72 (XLXN_166)
+     begin scope: 'XLXI_57/XLXI_94:S0'
+     LUT3:I0->O           21   0.205   1.113  Mmux_O11 (O)
+     end scope: 'XLXI_57/XLXI_94:O'
+     INV:I->O              1   0.568   0.924  XLXI_57/XLXI_12 (XLXI_57/XLXN_25)
+     AND3:I1->O            1   0.223   0.944  XLXI_57/XLXI_11 (XLXI_57/XLXN_31)
+     OR5:I0->O             1   0.203   0.579  XLXI_57/XLXI_14 (P41_OBUF)
+     OBUF:I->O                 2.571          P41_OBUF (P41)
+    ----------------------------------------
+    Total                      9.933ns (4.785ns logic, 5.148ns route)
+                                       (48.2% logic, 51.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4485 / 7
+-------------------------------------------------------------------------
+Delay:               12.277ns (Levels of Logic = 18)
+  Source:            SW_DIP<0> (PAD)
+  Destination:       P40 (PAD)
+
+  Data Path: SW_DIP<0> to P40
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.650  SW_DIP_0_IBUF (SW_DIP_0_IBUF)
+     begin scope: 'XLXI_33:I<0>'
+     INV:I->O              1   0.206   0.580  O<0>1_INV_0 (O<0>)
+     end scope: 'XLXI_33:O<0>'
+     begin scope: 'XLXI_30:B<0>'
+     LUT2:I1->O            1   0.205   0.000  Madd_n0010_Madd_lut<0> (Madd_n0010_Madd_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_n0010_Madd_cy<0> (Madd_n0010_Madd_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0010_Madd_cy<1> (Madd_n0010_Madd_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_n0010_Madd_cy<2> (Madd_n0010_Madd_cy<2>)
+     XORCY:CI->O           1   0.180   0.808  Madd_n0010_Madd_xor<3> (S<3>)
+     end scope: 'XLXI_30:S<3>'
+     begin scope: 'XLXI_62/XLXI_4:D1'
+     LUT6:I3->O            1   0.205   0.684  Mmux_O11 (O)
+     end scope: 'XLXI_62/XLXI_4:O'
+     begin scope: 'XLXI_57/XLXI_1:D0'
+     LUT3:I1->O           21   0.203   1.113  Mmux_O11 (O)
+     end scope: 'XLXI_57/XLXI_1:O'
+     INV:I->O              1   0.568   0.827  XLXI_57/XLXI_19 (XLXI_57/XLXN_35)
+     AND3:I2->O            1   0.320   0.944  XLXI_57/XLXI_18 (XLXI_57/XLXN_45)
+     begin scope: 'XLXI_57/XLXI_32:I4'
+     LUT6:I0->O            1   0.203   0.579  O1 (O)
+     end scope: 'XLXI_57/XLXI_32:O'
+     OBUF:I->O                 2.571          P40_OBUF (P40)
+    ----------------------------------------
+    Total                     12.277ns (6.093ns logic, 6.184ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock P123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+P123           |    2.048|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_58/XLXI_31/TC
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+XLXI_58/XLXI_31/TC|         |         |    2.048|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_58/XLXI_33/TC
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+XLXI_58/XLXI_33/TC|         |         |    2.048|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_58/XLXI_36/TC
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+XLXI_58/XLXI_36/TC|         |         |    2.048|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_58/XLXI_38/TC
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+XLXI_58/XLXI_38/TC|         |         |    2.048|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_58/XLXI_52/TC
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+XLXI_58/XLXI_52/TC|         |         |    2.048|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_58/XLXI_54/TC
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+XLXI_58/XLXI_54/TC|         |         |    2.048|         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_180
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_180       |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_181
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_181       |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.72 secs
+ 
+--> 
+
+Total memory usage is 4486824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :   46 (   0 filtered)
+

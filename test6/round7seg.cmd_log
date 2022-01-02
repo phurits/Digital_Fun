@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog round7seg_drc.vf -w C:/xilinx__workspace/test6/round7seg.sch 
+sch2sym -intstyle ise -family spartan6 -refsym round7seg C:/xilinx__workspace/test6/round7seg.sch C:/xilinx__workspace/test6/round7seg.sym 

@@ -1,0 +1,247 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ClockDivisor.vf
+// /___/   /\     Timestamp : 11/22/2021 17:23:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/try1/ClockDivisor.vf -w C:/xilinx__workspace/try1/ClockDivisor.sch
+//Design Name: ClockDivisor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_ClockDivisor(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_ClockDivisor(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module ClockDivisor(CLK, 
+                    CLK_1Hz, 
+                    CLK_2Hz, 
+                    CLK_10Hz, 
+                    CLK_100Hz, 
+                    CLK_1000Hz);
+
+    input CLK;
+   output CLK_1Hz;
+   output CLK_2Hz;
+   output CLK_10Hz;
+   output CLK_100Hz;
+   output CLK_1000Hz;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_28;
+   wire XLXN_35;
+   wire CLK_2Hz_DUMMY;
+   
+   assign CLK_2Hz = CLK_2Hz_DUMMY;
+   (* HU_SET = "XLXI_1_14" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_1 (.C(CLK), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_2));
+   (* HU_SET = "XLXI_2_15" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_2 (.C(XLXN_3), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_4));
+   (* HU_SET = "XLXI_3_16" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_3 (.C(XLXN_5), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_14));
+   (* HU_SET = "XLXI_4_17" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_4 (.C(XLXN_15), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_6));
+   (* HU_SET = "XLXI_5_20" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_5 (.C(XLXN_7), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_8));
+   (* HU_SET = "XLXI_6_19" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_6 (.C(XLXN_28), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_16));
+   (* HU_SET = "XLXI_7_18" *) 
+   CD4CE_HXILINX_ClockDivisor  XLXI_7 (.C(XLXN_18), 
+                                      .CE(XLXN_35), 
+                                      .CLR(), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_19));
+   INV  XLXI_14 (.I(XLXN_2), 
+                .O(XLXN_3));
+   INV  XLXI_15 (.I(XLXN_4), 
+                .O(XLXN_5));
+   INV  XLXI_16 (.I(XLXN_8), 
+                .O(XLXN_28));
+   INV  XLXI_17 (.I(XLXN_6), 
+                .O(XLXN_7));
+   INV  XLXI_18 (.I(XLXN_14), 
+                .O(XLXN_15));
+   INV  XLXI_25 (.I(XLXN_16), 
+                .O(XLXN_18));
+   INV  XLXI_26 (.I(XLXN_19), 
+                .O(CLK_2Hz_DUMMY));
+   VCC  XLXI_27 (.P(XLXN_35));
+   (* HU_SET = "XLXI_28_21" *) 
+   FJKC_HXILINX_ClockDivisor  XLXI_28 (.C(CLK_2Hz_DUMMY), 
+                                      .CLR(), 
+                                      .J(XLXN_35), 
+                                      .K(XLXN_35), 
+                                      .Q(CLK_1Hz));
+   (* HU_SET = "XLXI_29_22" *) 
+   FJKC_HXILINX_ClockDivisor  XLXI_29 (.C(XLXN_18), 
+                                      .CLR(), 
+                                      .J(XLXN_35), 
+                                      .K(XLXN_35), 
+                                      .Q(CLK_10Hz));
+   (* HU_SET = "XLXI_30_23" *) 
+   FJKC_HXILINX_ClockDivisor  XLXI_30 (.C(XLXN_28), 
+                                      .CLR(), 
+                                      .J(XLXN_35), 
+                                      .K(XLXN_35), 
+                                      .Q(CLK_100Hz));
+   (* HU_SET = "XLXI_31_24" *) 
+   FJKC_HXILINX_ClockDivisor  XLXI_31 (.C(XLXN_7), 
+                                      .CLR(), 
+                                      .J(XLXN_35), 
+                                      .K(XLXN_35), 
+                                      .Q(CLK_1000Hz));
+endmodule

@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -verilog or8_drc.vf -w C:/xilinx__workspace/TicTacToe/or8.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog or8_drc.vf -w C:/xilinx__workspace/TicTacToe/or8.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym or8 C:/xilinx__workspace/TicTacToe/or8.sch C:/xilinx__workspace/TicTacToe/or8.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog or8_drc.vf -w C:/xilinx__workspace/TicTacToe/or8.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym or8 C:/xilinx__workspace/TicTacToe/or8.sch C:/xilinx__workspace/TicTacToe/or8.sym 

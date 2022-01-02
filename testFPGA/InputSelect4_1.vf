@@ -1,0 +1,161 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : InputSelect4_1.vf
+// /___/   /\     Timestamp : 11/15/2021 12:48:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/testFPGA/InputSelect4_1.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch
+//Design Name: InputSelect4_1
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_InputSelect4_1 (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module InputSelect4_1(Add, 
+                      SB, 
+                      Sel0, 
+                      Sel1, 
+                      Sub, 
+                      X, 
+                      Output);
+
+    input [7:0] Add;
+    input [7:0] SB;
+    input Sel0;
+    input Sel1;
+    input [7:0] Sub;
+    input [7:0] X;
+   output [7:0] Output;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_95;
+   wire XLXN_112;
+   wire XLXN_113;
+   wire XLXN_114;
+   
+   (* HU_SET = "XLXI_1_11" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_1 (.D0(Add[0]), 
+                                        .D1(Sub[0]), 
+                                        .D2(X[0]), 
+                                        .D3(SB[0]), 
+                                        .E(XLXN_5), 
+                                        .S0(Sel0), 
+                                        .S1(Sel1), 
+                                        .O(Output[0]));
+   (* HU_SET = "XLXI_2_12" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_2 (.D0(Add[1]), 
+                                        .D1(Sub[1]), 
+                                        .D2(X[1]), 
+                                        .D3(SB[1]), 
+                                        .E(XLXN_8), 
+                                        .S0(Sel0), 
+                                        .S1(Sel1), 
+                                        .O(Output[1]));
+   (* HU_SET = "XLXI_3_14" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_3 (.D0(Add[2]), 
+                                        .D1(Sub[2]), 
+                                        .D2(X[2]), 
+                                        .D3(SB[2]), 
+                                        .E(XLXN_7), 
+                                        .S0(Sel0), 
+                                        .S1(Sel1), 
+                                        .O(Output[2]));
+   (* HU_SET = "XLXI_4_13" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_4 (.D0(Add[3]), 
+                                        .D1(Sub[3]), 
+                                        .D2(X[3]), 
+                                        .D3(SB[3]), 
+                                        .E(XLXN_6), 
+                                        .S0(Sel0), 
+                                        .S1(Sel1), 
+                                        .O(Output[3]));
+   VCC  XLXI_5 (.P(XLXN_5));
+   VCC  XLXI_6 (.P(XLXN_8));
+   VCC  XLXI_7 (.P(XLXN_7));
+   VCC  XLXI_8 (.P(XLXN_6));
+   (* HU_SET = "XLXI_27_15" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_27 (.D0(Add[4]), 
+                                         .D1(Sub[4]), 
+                                         .D2(X[4]), 
+                                         .D3(SB[4]), 
+                                         .E(XLXN_95), 
+                                         .S0(Sel0), 
+                                         .S1(Sel1), 
+                                         .O(Output[4]));
+   VCC  XLXI_28 (.P(XLXN_95));
+   (* HU_SET = "XLXI_29_16" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_29 (.D0(Add[5]), 
+                                         .D1(Sub[5]), 
+                                         .D2(X[5]), 
+                                         .D3(SB[5]), 
+                                         .E(XLXN_112), 
+                                         .S0(Sel0), 
+                                         .S1(Sel1), 
+                                         .O(Output[5]));
+   VCC  XLXI_30 (.P(XLXN_114));
+   VCC  XLXI_31 (.P(XLXN_113));
+   VCC  XLXI_32 (.P(XLXN_112));
+   (* HU_SET = "XLXI_33_17" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_33 (.D0(Add[7]), 
+                                         .D1(Sub[7]), 
+                                         .D2(X[7]), 
+                                         .D3(SB[7]), 
+                                         .E(XLXN_114), 
+                                         .S0(Sel0), 
+                                         .S1(Sel1), 
+                                         .O(Output[7]));
+   (* HU_SET = "XLXI_34_18" *) 
+   M4_1E_HXILINX_InputSelect4_1  XLXI_34 (.D0(Add[6]), 
+                                         .D1(Sub[6]), 
+                                         .D2(X[6]), 
+                                         .D3(SB[6]), 
+                                         .E(XLXN_113), 
+                                         .S0(Sel0), 
+                                         .S1(Sel1), 
+                                         .O(Output[6]));
+endmodule

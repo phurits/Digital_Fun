@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym bcdToHexDecoder D:/DigitalLab6/lab9/bcdToHexDecoder.sch D:/DigitalLab6/lab9/bcdToHexDecoder.sym 

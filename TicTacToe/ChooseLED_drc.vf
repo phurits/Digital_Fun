@@ -1,0 +1,222 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ChooseLED_drc.vf
+// /___/   /\     Timestamp : 12/14/2021 23:04:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog ChooseLED_drc.vf -w C:/xilinx__workspace/TicTacToe/ChooseLED.sch
+//Design Name: ChooseLED
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKCE_HXILINX_ChooseLED(Q, C, CE, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(CE)
+        begin
+          if(!J)
+          begin
+            if(K)
+            Q <= 1'b0;
+          end
+          else
+          begin
+            if(!K)
+            Q <= 1'b1;
+            else 
+            Q <= !Q;
+          end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module ChooseLED(Data, 
+                 Sel, 
+                 O);
+
+    input [8:0] Data;
+    input Sel;
+   output [8:0] O;
+   
+   wire choose0;
+   wire choose1;
+   wire choose2;
+   wire choose3;
+   wire choose4;
+   wire choose5;
+   wire choose6;
+   wire choose7;
+   wire choose8;
+   wire XLXN_198;
+   wire XLXN_199;
+   wire XLXN_200;
+   wire XLXN_217;
+   wire XLXN_218;
+   wire XLXN_219;
+   wire XLXN_222;
+   wire XLXN_223;
+   wire XLXN_224;
+   wire XLXN_227;
+   wire XLXN_228;
+   wire XLXN_229;
+   wire XLXN_232;
+   wire XLXN_233;
+   wire XLXN_234;
+   wire XLXN_237;
+   wire XLXN_238;
+   wire XLXN_239;
+   wire XLXN_242;
+   wire XLXN_243;
+   wire XLXN_244;
+   wire XLXN_247;
+   wire XLXN_248;
+   wire XLXN_249;
+   wire XLXN_252;
+   wire XLXN_253;
+   wire XLXN_254;
+   
+   (* HU_SET = "XLXI_137_0" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_137 (.C(choose0), 
+                                     .CE(XLXN_200), 
+                                     .CLR(XLXN_199), 
+                                     .J(XLXN_198), 
+                                     .K(XLXN_198), 
+                                     .Q(O[0]));
+   VCC  XLXI_138 (.P(XLXN_198));
+   GND  XLXI_139 (.G(XLXN_199));
+   VCC  XLXI_140 (.P(XLXN_200));
+   AND2  XLXI_141 (.I0(Sel), 
+                  .I1(Data[0]), 
+                  .O(choose0));
+   AND2  XLXI_142 (.I0(Sel), 
+                  .I1(Data[1]), 
+                  .O(choose1));
+   AND2  XLXI_143 (.I0(Sel), 
+                  .I1(Data[2]), 
+                  .O(choose2));
+   AND2  XLXI_144 (.I0(Sel), 
+                  .I1(Data[3]), 
+                  .O(choose3));
+   AND2  XLXI_145 (.I0(Sel), 
+                  .I1(Data[4]), 
+                  .O(choose4));
+   AND2  XLXI_146 (.I0(Sel), 
+                  .I1(Data[5]), 
+                  .O(choose5));
+   AND2  XLXI_147 (.I0(Sel), 
+                  .I1(Data[6]), 
+                  .O(choose6));
+   AND2  XLXI_148 (.I0(Sel), 
+                  .I1(Data[7]), 
+                  .O(choose7));
+   AND2  XLXI_149 (.I0(Sel), 
+                  .I1(Data[8]), 
+                  .O(choose8));
+   (* HU_SET = "XLXI_154_1" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_154 (.C(choose1), 
+                                     .CE(XLXN_219), 
+                                     .CLR(XLXN_218), 
+                                     .J(XLXN_217), 
+                                     .K(XLXN_217), 
+                                     .Q(O[1]));
+   VCC  XLXI_155 (.P(XLXN_217));
+   GND  XLXI_156 (.G(XLXN_218));
+   VCC  XLXI_157 (.P(XLXN_219));
+   (* HU_SET = "XLXI_158_2" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_158 (.C(choose2), 
+                                     .CE(XLXN_224), 
+                                     .CLR(XLXN_223), 
+                                     .J(XLXN_222), 
+                                     .K(XLXN_222), 
+                                     .Q(O[2]));
+   VCC  XLXI_159 (.P(XLXN_222));
+   GND  XLXI_160 (.G(XLXN_223));
+   VCC  XLXI_161 (.P(XLXN_224));
+   (* HU_SET = "XLXI_162_3" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_162 (.C(choose3), 
+                                     .CE(XLXN_229), 
+                                     .CLR(XLXN_228), 
+                                     .J(XLXN_227), 
+                                     .K(XLXN_227), 
+                                     .Q(O[3]));
+   VCC  XLXI_163 (.P(XLXN_227));
+   GND  XLXI_164 (.G(XLXN_228));
+   VCC  XLXI_165 (.P(XLXN_229));
+   (* HU_SET = "XLXI_166_4" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_166 (.C(choose4), 
+                                     .CE(XLXN_234), 
+                                     .CLR(XLXN_233), 
+                                     .J(XLXN_232), 
+                                     .K(XLXN_232), 
+                                     .Q(O[4]));
+   VCC  XLXI_167 (.P(XLXN_232));
+   GND  XLXI_168 (.G(XLXN_233));
+   VCC  XLXI_169 (.P(XLXN_234));
+   (* HU_SET = "XLXI_170_5" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_170 (.C(choose5), 
+                                     .CE(XLXN_239), 
+                                     .CLR(XLXN_238), 
+                                     .J(XLXN_237), 
+                                     .K(XLXN_237), 
+                                     .Q(O[5]));
+   VCC  XLXI_171 (.P(XLXN_237));
+   GND  XLXI_172 (.G(XLXN_238));
+   VCC  XLXI_173 (.P(XLXN_239));
+   (* HU_SET = "XLXI_174_6" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_174 (.C(choose6), 
+                                     .CE(XLXN_244), 
+                                     .CLR(XLXN_243), 
+                                     .J(XLXN_242), 
+                                     .K(XLXN_242), 
+                                     .Q(O[6]));
+   VCC  XLXI_175 (.P(XLXN_242));
+   GND  XLXI_176 (.G(XLXN_243));
+   VCC  XLXI_177 (.P(XLXN_244));
+   (* HU_SET = "XLXI_178_7" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_178 (.C(choose7), 
+                                     .CE(XLXN_249), 
+                                     .CLR(XLXN_248), 
+                                     .J(XLXN_247), 
+                                     .K(XLXN_247), 
+                                     .Q(O[7]));
+   VCC  XLXI_179 (.P(XLXN_247));
+   GND  XLXI_180 (.G(XLXN_248));
+   VCC  XLXI_181 (.P(XLXN_249));
+   (* HU_SET = "XLXI_182_8" *) 
+   FJKCE_HXILINX_ChooseLED  XLXI_182 (.C(choose8), 
+                                     .CE(XLXN_254), 
+                                     .CLR(XLXN_253), 
+                                     .J(XLXN_252), 
+                                     .K(XLXN_252), 
+                                     .Q(O[8]));
+   VCC  XLXI_183 (.P(XLXN_252));
+   GND  XLXI_184 (.G(XLXN_253));
+   VCC  XLXI_185 (.P(XLXN_254));
+endmodule

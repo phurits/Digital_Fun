@@ -1,0 +1,39 @@
+
+
+
+
+NET "SW_Slide[7]" LOC = P55;
+NET "SW_Slide[6]" LOC = P56;
+NET "SW_Slide[5]" LOC = P57;
+NET "SW_Slide[4]" LOC = P58;
+NET "SW_Slide[3]" LOC = P59;
+NET "SW_Slide[2]" LOC = P61;
+NET "SW_Slide[1]" LOC = P62;
+NET "SW_Slide[0]" LOC = P66;
+NET "BT_1" LOC = P45;
+NET "BT_0" LOC = P46;
+NET "LED_P67" LOC = P67;
+NET "LED_P74" LOC = P74;
+NET "P27" LOC = P27;
+NET "P29" LOC = P29;
+NET "P32" LOC = P32;
+NET "P34" LOC = P34;
+NET "P35" LOC = P35;
+NET "P40" LOC = P40;
+NET "P41" LOC = P41;
+NET "P43" LOC = P43;
+NET "P44" LOC = P44;
+NET "P123" LOC = P123;
+NET "SW_DIP[7]" LOC = P112;
+NET "SW_DIP[6]" LOC = P111;
+NET "SW_DIP[5]" LOC = P105;
+NET "SW_DIP[4]" LOC = P104;
+NET "SW_DIP[3]" LOC = P102;
+NET "SW_DIP[2]" LOC = P101;
+NET "SW_DIP[1]" LOC = P100;
+NET "SW_DIP[0]" LOC = P99;
+
+# PlanAhead Generated physical constraints 
+
+NET "Com2" LOC = P33;
+NET "Com3" LOC = P30;

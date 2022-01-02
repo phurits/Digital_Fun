@@ -1,0 +1,15 @@
+ISim log file
+Running: C:\xilinx__workspace\Lab4\HalfAdder_HalfAdder_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/xilinx__workspace/Lab4/HalfAdder_HalfAdder_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+A=0,B=0 : X=0,Y=0
+A=0,B=1 : X=0,Y=1
+A=1,B=0 : X=0,Y=1
+A=1,B=1 : X=1,Y=0
+Stopped at time : 20 ns : File "C:/xilinx__workspace/Lab4/test.v" Line 38

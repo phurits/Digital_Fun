@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Toggle_drc.vf -w C:/xilinx__workspace/testFPGA/Toggle.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Toggle C:/xilinx__workspace/testFPGA/Toggle.sch C:/xilinx__workspace/testFPGA/Toggle.sym 

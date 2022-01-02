@@ -1,0 +1,7 @@
+verilog work "to_1_2_10_100_1000Hz.vf"
+verilog work "rreal_selector.vf"
+verilog work "my_XOR_8.vf"
+verilog work "myShifterTest.vf"
+verilog work "ModeSelector.vf"
+verilog work "BCDtoHex7segment.vf"
+verilog work "finalCircuit.vf"

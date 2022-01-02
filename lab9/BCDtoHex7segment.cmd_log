@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDtoHex7segment D:/DigitalLab6/lab9/BCDtoHex7segment.sch D:/DigitalLab6/lab9/BCDtoHex7segment.sym 

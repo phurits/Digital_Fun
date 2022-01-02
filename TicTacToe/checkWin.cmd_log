@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog checkWin_drc.vf -w C:/xilinx__workspace/TicTacToe/checkWin.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym checkWin C:/xilinx__workspace/TicTacToe/checkWin.sch C:/xilinx__workspace/TicTacToe/checkWin.sym 

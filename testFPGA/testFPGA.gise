@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="testFPGA.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Decoder2_4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ExclusiveOR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="ExclusiveOR.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="InputSelect4_1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="InputSelect4_1.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ModeSelector.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ShiftBit.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="ShiftBit.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Toggle.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Toggle.vf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="bcd_to7seg_hex.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="bcd_to7seg_hex.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="testFPGA.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="testFPGA.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="testFPGA.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="testFPGA.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="testFPGA.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="testFPGA.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="testFPGA.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="testFPGA.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="testFPGA.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="testFPGA.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testFPGA.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="testFPGA.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="testFPGA.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="testFPGA.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="testFPGA.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="testFPGA.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="testFPGA.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="testFPGA.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="testFPGA.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="testFPGA.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="testFPGA.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="testFPGA_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="testFPGA_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="testFPGA_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="testFPGA_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="testFPGA_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testFPGA_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testFPGA_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="testFPGA_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="testFPGA_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testFPGA_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="testFPGA_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="testFPGA_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="testFPGA_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testFPGA_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="testfpga.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="testfpga.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="testfpga.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="to_1_2_10_100_1000Hz.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="to_1_2_10_100_1000Hz.vf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1636955299" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1636955299">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955302" xil_pn:in_ck="-6898818802486812583" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3164314089189636492" xil_pn:start_ts="1636955299">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="ExclusiveOR.vf"/>
+      <outfile xil_pn:name="InputSelect4_1.vf"/>
+      <outfile xil_pn:name="ShiftBit.vf"/>
+      <outfile xil_pn:name="Toggle.vf"/>
+      <outfile xil_pn:name="bcd_to7seg_hex.vf"/>
+      <outfile xil_pn:name="testFPGA.vf"/>
+      <outfile xil_pn:name="to_1_2_10_100_1000Hz.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955302" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6901358782502387101" xil_pn:start_ts="1636955302">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955302" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1636955302">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955302" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1494903862859377394" xil_pn:start_ts="1636955302">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955302" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1636955302">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955302" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2101402529450026541" xil_pn:start_ts="1636955302">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955309" xil_pn:in_ck="-568363047633705589" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7107060034053856213" xil_pn:start_ts="1636955302">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="testFPGA.lso"/>
+      <outfile xil_pn:name="testFPGA.ngc"/>
+      <outfile xil_pn:name="testFPGA.ngr"/>
+      <outfile xil_pn:name="testFPGA.prj"/>
+      <outfile xil_pn:name="testFPGA.stx"/>
+      <outfile xil_pn:name="testFPGA.syr"/>
+      <outfile xil_pn:name="testFPGA.xst"/>
+      <outfile xil_pn:name="testFPGA_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955309" xil_pn:in_ck="6023077386675888234" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784894219588690592" xil_pn:start_ts="1636955309">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955314" xil_pn:in_ck="5744038877392009614" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5666248394770399100" xil_pn:start_ts="1636955309">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="testFPGA.bld"/>
+      <outfile xil_pn:name="testFPGA.ngd"/>
+      <outfile xil_pn:name="testFPGA_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955319" xil_pn:in_ck="7411928392344994575" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1636955314">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="testFPGA.pcf"/>
+      <outfile xil_pn:name="testFPGA_map.map"/>
+      <outfile xil_pn:name="testFPGA_map.mrp"/>
+      <outfile xil_pn:name="testFPGA_map.ncd"/>
+      <outfile xil_pn:name="testFPGA_map.ngm"/>
+      <outfile xil_pn:name="testFPGA_map.xrpt"/>
+      <outfile xil_pn:name="testFPGA_summary.xml"/>
+      <outfile xil_pn:name="testFPGA_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955329" xil_pn:in_ck="-1204482611499134680" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1636955319">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="testFPGA.ncd"/>
+      <outfile xil_pn:name="testFPGA.pad"/>
+      <outfile xil_pn:name="testFPGA.par"/>
+      <outfile xil_pn:name="testFPGA.ptwx"/>
+      <outfile xil_pn:name="testFPGA.unroutes"/>
+      <outfile xil_pn:name="testFPGA.xpi"/>
+      <outfile xil_pn:name="testFPGA_pad.csv"/>
+      <outfile xil_pn:name="testFPGA_pad.txt"/>
+      <outfile xil_pn:name="testFPGA_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955336" xil_pn:in_ck="6023077386675880609" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1636955329">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="testFPGA.ut"/>
+      <outfile xil_pn:name="testfpga.bgn"/>
+      <outfile xil_pn:name="testfpga.bit"/>
+      <outfile xil_pn:name="testfpga.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1636955329" xil_pn:in_ck="8611441303065599115" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1636955325">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="testFPGA.twr"/>
+      <outfile xil_pn:name="testFPGA.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

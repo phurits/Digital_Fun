@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : db.vf
+// /___/   /\     Timestamp : 11/23/2021 00:03:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/try5/db.vf -w C:/xilinx__workspace/try5/db.sch
+//Design Name: db
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module db(inp, 
+          A, 
+          B, 
+          C, 
+          D, 
+          E, 
+          F, 
+          G);
+
+    input inp;
+   output A;
+   output B;
+   output C;
+   output D;
+   output E;
+   output F;
+   output G;
+   
+   
+   INV  XLXI_1 (.I(inp), 
+               .O(F));
+   GND  XLXI_3 (.G(A));
+   VCC  XLXI_4 (.P(C));
+   VCC  XLXI_5 (.P(D));
+   VCC  XLXI_6 (.P(E));
+   VCC  XLXI_7 (.P(G));
+   BUF  XLXI_8 (.I(inp), 
+               .O(B));
+endmodule

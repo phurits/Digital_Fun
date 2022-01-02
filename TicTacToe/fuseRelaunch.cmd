@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/xilinx__workspace/TicTacToe/Main_isim_beh.exe" -prj "C:/xilinx__workspace/TicTacToe/Main_beh.prj" "work.Main" "work.glbl" 

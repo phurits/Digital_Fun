@@ -1,0 +1,20 @@
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2sym -intstyle ise -family spartan6 -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2sym -intstyle ise -family spartan6 -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2sym -intstyle ise -family spartan6 -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDshow_drc.vf -w C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDshow C:/xilinx__workspace/TickTacToeFinal/LEDshow.sch C:/xilinx__workspace/TickTacToeFinal/LEDshow.sym 

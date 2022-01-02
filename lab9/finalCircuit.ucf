@@ -1,0 +1,37 @@
+
+
+NET "L0_P82" LOC = P67;
+NET "L1_P81" LOC = P74;
+NET "pb1P45" LOC = P45;
+NET "pb2P46" LOC = P46;
+
+# PlanAhead Generated physical constraints 
+
+NET "AIn[7]" LOC = P112;
+NET "AIn[6]" LOC = P111;
+NET "AIn[5]" LOC = P105;
+NET "AIn[4]" LOC = P104;
+NET "AIn[3]" LOC = P102;
+NET "AIn[2]" LOC = P101;
+NET "AIn[1]" LOC = P100;
+NET "AIn[0]" LOC = P99;
+NET "BIn[0]" LOC = P66;
+NET "BIn[1]" LOC = P62;
+NET "BIn[2]" LOC = P61;
+NET "BIn[3]" LOC = P59;
+NET "BIn[4]" LOC = P58;
+NET "BIn[5]" LOC = P57;
+NET "BIn[6]" LOC = P56;
+NET "BIn[7]" LOC = P55;
+NET "A7" LOC = P41;
+NET "B7" LOC = P40;
+NET "C7" LOC = P35;
+NET "D7" LOC = P34;
+NET "E7" LOC = P32;
+NET "F7" LOC = P29;
+NET "G7" LOC = P27;
+NET "OSC123" LOC = P123;
+NET "COM_0" LOC = P44;
+NET "COM_1" LOC = P43;
+NET "COM_2" LOC = P33;
+NET "COM_3" LOC = P30;

@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family spartan6 -verilog WinText_drc.vf -w C:/xilinx__workspace/TicTacToeV2/WinText.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog WinText_drc.vf -w C:/xilinx__workspace/TicTacToeV2/WinText.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog WinText_drc.vf -w C:/xilinx__workspace/TicTacToeV2/WinText.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog WinText_drc.vf -w C:/xilinx__workspace/TicTacToeV2/WinText.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog WinText_drc.vf -w C:/xilinx__workspace/TicTacToeV2/WinText.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog WinText_drc.vf -w C:/xilinx__workspace/TicTacToeV2/WinText.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym WinText C:/xilinx__workspace/TicTacToeV2/WinText.sch C:/xilinx__workspace/TicTacToeV2/WinText.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym WinText C:/xilinx__workspace/TicTacToeV2/WinText.sch C:/xilinx__workspace/TicTacToeV2/WinText.sym 

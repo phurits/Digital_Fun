@@ -1,0 +1,21 @@
+ISim log file
+Running: C:\xilinx__workspace\Lab06\Main_Main_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/xilinx__workspace/Lab06/Main_Main_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ch1= 0 | ch2 = 0
+Start.
+ch1= 2 | ch2 = 2
+ch1= 3 | ch2 = 3
+Stop : Buzzer = 1 .
+Start again.
+ch1= 5 | ch2 = 5
+ch1= 6 | ch2 = 6
+ch1= 7 | ch2 = 7
+Stop : Buzzer = 1 .
+Stopped at time : 195 ns : File "C:/xilinx__workspace/Lab06/codey.v" Line 127

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym bcd_to7seg_hex C:/xilinx__workspace/testFPGA/bcd_to7seg_hex.sch C:/xilinx__workspace/testFPGA/bcd_to7seg_hex.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym bcd_to7seg_hex C:/xilinx__workspace/testFPGA/bcd_to7seg_hex.sch C:/xilinx__workspace/testFPGA/bcd_to7seg_hex.sym 

@@ -1,0 +1,91 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : colorNow.vf
+// /___/   /\     Timestamp : 12/16/2021 00:03:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/TicTacToeV2/colorNow.vf -w C:/xilinx__workspace/TicTacToeV2/colorNow.sch
+//Design Name: colorNow
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module colorNow(Data, 
+                Selector, 
+                G, 
+                R);
+
+    input [8:0] Data;
+    input Selector;
+   output [8:0] G;
+   output [8:0] R;
+   
+   wire XLXN_6;
+   
+   INV  XLXI_2 (.I(Selector), 
+               .O(XLXN_6));
+   AND2  XLXI_3 (.I0(Data[0]), 
+                .I1(XLXN_6), 
+                .O(R[0]));
+   AND2  XLXI_4 (.I0(Selector), 
+                .I1(Data[0]), 
+                .O(G[0]));
+   AND2  XLXI_23 (.I0(Data[1]), 
+                 .I1(XLXN_6), 
+                 .O(R[1]));
+   AND2  XLXI_24 (.I0(Selector), 
+                 .I1(Data[1]), 
+                 .O(G[1]));
+   AND2  XLXI_25 (.I0(Data[2]), 
+                 .I1(XLXN_6), 
+                 .O(R[2]));
+   AND2  XLXI_26 (.I0(Selector), 
+                 .I1(Data[2]), 
+                 .O(G[2]));
+   AND2  XLXI_27 (.I0(Data[3]), 
+                 .I1(XLXN_6), 
+                 .O(R[3]));
+   AND2  XLXI_28 (.I0(Selector), 
+                 .I1(Data[3]), 
+                 .O(G[3]));
+   AND2  XLXI_29 (.I0(Data[4]), 
+                 .I1(XLXN_6), 
+                 .O(R[4]));
+   AND2  XLXI_30 (.I0(Selector), 
+                 .I1(Data[4]), 
+                 .O(G[4]));
+   AND2  XLXI_31 (.I0(Data[5]), 
+                 .I1(XLXN_6), 
+                 .O(R[5]));
+   AND2  XLXI_32 (.I0(Selector), 
+                 .I1(Data[5]), 
+                 .O(G[5]));
+   AND2  XLXI_33 (.I0(Data[6]), 
+                 .I1(XLXN_6), 
+                 .O(R[6]));
+   AND2  XLXI_34 (.I0(Selector), 
+                 .I1(Data[6]), 
+                 .O(G[6]));
+   AND2  XLXI_35 (.I0(Data[7]), 
+                 .I1(XLXN_6), 
+                 .O(R[7]));
+   AND2  XLXI_36 (.I0(Selector), 
+                 .I1(Data[7]), 
+                 .O(G[7]));
+   AND2  XLXI_37 (.I0(Data[8]), 
+                 .I1(XLXN_6), 
+                 .O(R[8]));
+   AND2  XLXI_38 (.I0(Selector), 
+                 .I1(Data[8]), 
+                 .O(G[8]));
+endmodule

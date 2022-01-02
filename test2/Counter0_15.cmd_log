@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Counter0_15_drc.vf -w C:/xilinx__workspace/test2/Counter0_15.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Counter0_15 C:/xilinx__workspace/test2/Counter0_15.sch C:/xilinx__workspace/test2/Counter0_15.sym 

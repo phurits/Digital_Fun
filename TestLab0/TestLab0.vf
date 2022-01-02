@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TestLab0.vf
+// /___/   /\     Timestamp : 11/14/2021 14:05:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/xilinx__workspace/TestLab0/TestLab0.vf -w C:/xilinx__workspace/TestLab0/TestLab0.sch
+//Design Name: TestLab0
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TestLab0(SW_1, 
+                SW_2, 
+                A);
+
+    input SW_1;
+    input SW_2;
+   output A;
+   
+   
+   AND2  XLXI_1 (.I0(SW_2), 
+                .I1(SW_1), 
+                .O(A));
+endmodule

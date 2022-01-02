@@ -1,0 +1,4 @@
+verilog work "to_1_2_10_100_1000Hz.vf"
+verilog work "round7seg.vf"
+verilog work "counter05.vf"
+verilog work "main.vf"

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="Button0" Dir="IN"/>
+		<Port Id="Button1" Dir="IN"/>
+		<Port Id="CLK" Dir="IN"/>
+		<Port Id="G0" Dir="OUT"/>
+		<Port Id="G1" Dir="OUT"/>
+		<Port Id="G2" Dir="OUT"/>
+		<Port Id="G3" Dir="OUT"/>
+		<Port Id="G4" Dir="OUT"/>
+		<Port Id="G5" Dir="OUT"/>
+		<Port Id="G6" Dir="OUT"/>
+		<Port Id="G7" Dir="OUT"/>
+		<Port Id="G8" Dir="OUT"/>
+		<Port Id="LedGreen" Dir="OUT"/>
+		<Port Id="LedRed" Dir="OUT"/>
+		<Port Id="LedWin" Dir="OUT"/>
+		<Port Id="R0" Dir="OUT"/>
+		<Port Id="R1" Dir="OUT"/>
+		<Port Id="R2" Dir="OUT"/>
+		<Port Id="R3" Dir="OUT"/>
+		<Port Id="R4" Dir="OUT"/>
+		<Port Id="R5" Dir="OUT"/>
+		<Port Id="R6" Dir="OUT"/>
+		<Port Id="R7" Dir="OUT"/>
+		<Port Id="R8" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

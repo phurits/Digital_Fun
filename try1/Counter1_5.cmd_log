@@ -1,0 +1,13 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Counter1_5_drc.vf -w C:/xilinx__workspace/try1/Counter1_5.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter1_5_drc.vf -w C:/xilinx__workspace/try1/Counter1_5.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter1_5_drc.vf -w C:/xilinx__workspace/try1/Counter1_5.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter1_5_drc.vf -w C:/xilinx__workspace/try1/Counter1_5.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter1_5_drc.vf -w C:/xilinx__workspace/try1/Counter1_5.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter1_5_drc.vf -w C:/xilinx__workspace/try1/Counter1_5.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter1_5 C:/xilinx__workspace/try1/Counter1_5.sch C:/xilinx__workspace/try1/Counter1_5.sym 

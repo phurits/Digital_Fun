@@ -1,0 +1,4 @@
+verilog work "to_1_2_10_100_1000Hz.vf"
+verilog work "Counter0_15.vf"
+verilog work "bcd_to7seg_hex.vf"
+verilog work "main.vf"

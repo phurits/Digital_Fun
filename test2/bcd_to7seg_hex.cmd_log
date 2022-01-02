@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan6 -refsym bcd_to7seg_hex C:/xilinx__workspace/test2/bcd_to7seg_hex.sch C:/xilinx__workspace/test2/bcd_to7seg_hex.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog bcd_to7seg_hex_drc.vf -w C:/xilinx__workspace/test2/bcd_to7seg_hex.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog bcd_to7seg_hex_drc.vf -w C:/xilinx__workspace/test2/bcd_to7seg_hex.sch 
+sch2sym -intstyle ise -family spartan6 -refsym bcd_to7seg_hex C:/xilinx__workspace/test2/bcd_to7seg_hex.sch C:/xilinx__workspace/test2/bcd_to7seg_hex.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym bcd_to7seg_hex C:/xilinx__workspace/test2/bcd_to7seg_hex.sch C:/xilinx__workspace/test2/bcd_to7seg_hex.sym 

@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog InputSelect4_1_drc.vf -w C:/xilinx__workspace/testFPGA/InputSelect4_1.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym InputSelect4_1 C:/xilinx__workspace/testFPGA/InputSelect4_1.sch C:/xilinx__workspace/testFPGA/InputSelect4_1.sym 
